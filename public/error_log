@@ -1,0 +1,5 @@
+[24-Oct-2024 07:37:34 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\PartyController::generatePDF() in /home/qazilzmb/pos.nextstepsols.com/app/Http/Controllers/PartyController.php on line 698
+[24-Oct-2024 07:41:39 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\PartyController::generatePDF() in /home/qazilzmb/pos.nextstepsols.com/app/Http/Controllers/PartyController.php on line 698
+[24-Oct-2024 07:41:42 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\PartyController::generatePDF() in /home/qazilzmb/pos.nextstepsols.com/app/Http/Controllers/PartyController.php on line 698
+[24-Oct-2024 07:42:03 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\PartyController::generatePDF() in /home/qazilzmb/pos.nextstepsols.com/app/Http/Controllers/PartyController.php on line 698
+[24-Oct-2024 07:44:18 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\PartyController::generatePDF() in /home/qazilzmb/pos.nextstepsols.com/app/Http/Controllers/PartyController.php on line 698
