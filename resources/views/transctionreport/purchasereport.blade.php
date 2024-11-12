@@ -535,33 +535,7 @@
                                                 <h5 class="mt-2"> Excel <i class="bi bi-filetype-xls"></i></h5>
                                             </div>
 
-                                            <div class="col-md-2 mt-4">
-                                                <div class="rounded" style="width:160px; height:75px; background-color:aquamarine;">
-                                                    <h6 class="text-start pt-3 px-3">Paid</h6>
-                                                    <h4 class=" px-3"> Rs: ${{ number_format($cashTotal, 2) }}</h4>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-1 mt-5">
-                                                <i class="bi bi-plus" style="font-size: 30px; font-weight:900;"></i>
-                                            </div>
 
-                                            <div class="col-md-2 mt-4" style="margin-left: -40px;">
-                                                <div class="rounded" style="width:160px; height:75px; background-color:lightblue;">
-                                                    <h6 class="text-start pt-3 px-3">Unpaid</h6>
-                                                    <h4 class=" px-3"> Rs: ${{ number_format($creditTotal, 2) }}</h4>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-1 " style="margin:52px 0px 0px 0px;">
-                                                <i class="bi bi-sliders" style="font-size:large;"></i>
-                                            </div>
-
-                                            <div class="col-md-2 mt-4" style="margin-left: -40px;">
-                                                <div class="rounded" style="width:160px; height:75px; background-color:lightsalmon;">
-                                                    <h6 class="text-start pt-3 px-3">Total</h6>
-                                                    <h4 class=" px-3"> Rs: ${{ number_format($totalamnt, 2) }}</h4>
-                                                </div>
-                                            </div>
 
 
                                         </div>
