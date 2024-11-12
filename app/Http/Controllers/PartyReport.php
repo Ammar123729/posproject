@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\AddParty;
+use App\Models\Purchase;
+use App\Models\Sale;
 use Illuminate\Http\Request;
 
 class PartyReport extends Controller
@@ -15,6 +17,7 @@ class PartyReport extends Controller
 
     public function partystatement()
     {
-        return view('partyreport.partystatement');
+        $sellstatement = Sale::all();
+        return view('partyreport.partystatement', compact('sellstatement'));
     }
 }

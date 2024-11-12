@@ -564,22 +564,23 @@
                                             <tr>
                                                 <th> Date </th>
                                                 <th> Party Name </th>
-                                                <th> Party Email </th>
-                                                <th> Party Phone </th>
-                                                <th> Party Address </th>
-
+                                                <th> Party Invoice </th>
+                                                <th> Party Payment Method </th>
+                                                <th> Party Cash Detail </th>
+                                                <th> Party Status </th>
                                             </tr>
                                         </thead>
                                         <tbody>
-
+                                            @foreach($sellstatement as $sale)
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td>{{$sale->date}}</td>
+                                                <td>{{$sale->party_name}}</td>
+                                                <td>{{$sale->invoice_number}}</td>
+                                                <td>{{$sale->payment_method}}</td>
+                                                <td>{{$sale->cash_details}}</td>
+                                                <td>{{$sale->status}}</td>
                                             </tr>
-
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>
