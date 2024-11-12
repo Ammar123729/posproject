@@ -573,6 +573,9 @@
                                         <tbody>
                                             @foreach($sellstatement as $sale)
                                             <tr>
+                                                <td>
+                                                    <span style="color: Red; font-size:large">&#x25CF;</span>
+                                                </td>
                                                 <td>{{$sale->date}}</td>
                                                 <td>{{$sale->party->party_name}}</td>
                                                 <td>{{$sale->invoice_number}}</td>
