@@ -574,7 +574,7 @@
                                             @foreach($sellstatement as $sale)
                                             <tr>
                                                 <td>{{$sale->date}}</td>
-                                                <td>{{$sale->party()->party_name}}</td>
+                                                <td>{{$sale->party->party_name}}</td>
                                                 <td>{{$sale->invoice_number}}</td>
                                                 <td>{{$sale->payment_method}}</td>
                                                 <td>{{$sale->cash_details}}</td>
