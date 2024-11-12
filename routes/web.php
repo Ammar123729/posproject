@@ -5,6 +5,7 @@ use App\Http\Controllers\CashBnakController;
 use App\Http\Controllers\ExpensesController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\PartyController;
+use App\Http\Controllers\PartyReport;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\PurchaseController;
 use App\Http\Controllers\RoleController;
@@ -164,3 +165,4 @@ Route::post('profileupdate', [AuthController::class, 'profile_update'])->name('p
 Route::post('/notifications', [NotificationController::class, 'store'])->name('notifications.store');
 Route::get('/saleinvreport', [TransctionController::class, 'get_invreport'])->name('sale.invreport');
 Route::get('/purchasereport', [TransctionController::class, 'purchase_report'])->name('purchase.report');
+Route::get('allparty',[PartyReport::class, 'allparty']);
