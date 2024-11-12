@@ -520,7 +520,7 @@
                       </div> -->
 
                                             <div class="col-md-7">
-                                                <form method="GET" action="{{ route('sale.inv') }}">
+                                                <form method="GET" action="{{ route('sale.invreport') }}">
                                                     <div class="input-daterange input-group" id="datepicker">
                                                         <input id="start" type="date" class="form-control rounded shadow" name="start" value="{{ request()->input('start') }}" />
                                                         <span class="input-group-addon" style="margin: 5px 10px 0px 10px;">to</span>
