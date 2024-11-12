@@ -584,6 +584,20 @@
                                                 <td>{{$sale->status}}</td>
                                             </tr>
                                             @endforeach
+
+                                            @foreach($partystatement as $purchase)
+                                            <tr>
+                                                <td>
+                                                    <span style="color: Green; font-size:large">&#x25CF;</span>
+                                                </td>
+                                                <td>{{$purchase->date}}</td>
+                                                <td>{{$purchase->party->party_name}}</td>
+                                                <td>{{$purchase->invoice_number}}</td>
+                                                <td>{{$purchase->payment_method}}</td>
+                                                <td>{{$purchase->cash_details}}</td>
+                                                <td>{{$purchase->status}}</td>
+                                            </tr>
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>

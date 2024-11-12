@@ -18,6 +18,7 @@ class PartyReport extends Controller
     public function partystatement()
     {
         $sellstatement = Sale::all();
-        return view('partyreport.partystatement', compact('sellstatement'));
+        $partystatement= Purchase::all();
+        return view('partyreport.partystatement', compact('sellstatement', 'partystatement'));
     }
 }
