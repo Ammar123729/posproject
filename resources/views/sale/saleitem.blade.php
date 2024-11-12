@@ -41,7 +41,7 @@
         <i class="bi bi-arrow-left mx-2" style="font-size:50px; font-weight:900"></i>
     </a>
 
-    <a href="{{url('dashboard')}}">
+    <a href="{{url('dashboard')}}" class="btn btn-primary">
         <i class="bi bi-arrow-left mx-2" style="font-size:50px; font-weight:900"></i>
     </a>
 
