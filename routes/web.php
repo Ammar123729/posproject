@@ -8,6 +8,7 @@ use App\Http\Controllers\PartyController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\PurchaseController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\TransctionController;
 use App\Http\Controllers\UserController;
 use App\Models\AddItem;
 use App\Models\Expenses;
@@ -161,3 +162,4 @@ Route::post('profileupdate', [AuthController::class, 'profile_update'])->name('p
 //Notification Controller
 
 Route::post('/notifications', [NotificationController::class, 'store'])->name('notifications.store');
+Route::get('/saleinvreport', [TransctionController::class, 'get_invreport'])->name('sale.invreport');
