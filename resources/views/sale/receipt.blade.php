@@ -2,6 +2,7 @@
 @include('sidebar.head')
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,23 +13,39 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            width: 270px; /* Adjust width for receipt */
-            border: 1px solid #000; /* Optional border for visual clarity */
+            width: 270px;
+            /* Adjust width for receipt */
+            border: 1px solid #000;
+            /* Optional border for visual clarity */
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
         }
-        th, td {
-            border: 1px solid #000; /* Add borders */
+
+        th,
+        td {
+            border: 1px solid #000;
+            /* Add borders */
             padding: 5px;
             text-align: left;
         }
+
         h1 {
             text-align: center;
         }
+
+        @media print {
+
+            #printButton,
+            #pdfButton {
+                display: none;
+            }
+        }
     </style>
 </head>
+
 <body>
     <h1>Receipt</h1>
     <p><strong>Party Name:</strong> {{ $party->party_name }}</p>
@@ -76,5 +93,6 @@
         };
     </script>
 </body>
+
 </html>
 @include('sidebar.footbar')
