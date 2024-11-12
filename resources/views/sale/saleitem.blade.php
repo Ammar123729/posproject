@@ -53,7 +53,7 @@
 
         <!-- start design page -->
 
-        <div class="main-panel" style="margin-top: -120px; width:140%  ">
+        <div class="main-panel" style="margin-top: -110px; width:140%  ">
             <div class="content-wrapper">
                 <div class="row">
                     <div class="col-lg-12 grid-margin stretch-card">
