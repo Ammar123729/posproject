@@ -34,7 +34,7 @@
         <li class="nav-item d-none d-lg-block">
           <div id="" class="input-group">
             <a href="{{route('sale.item')}}">
-              <button class="btn btn-primary rounded" style="font-size: large;"><i class="bi bi-plus" style="font-size:larger; margin-right:10px; font-weight:900; "></i> Add Sale</button>
+              <button class="btn btn-primary rounded" style="font-size: large;"><i class="bi bi-plus" style="font-size:larger; margin-right:10px; font-weight:900; "></i> Add Sales</button>
             </a>
           </div>
         </li>
