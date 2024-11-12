@@ -42,7 +42,7 @@
     </a>
 
     <a href="{{url('dashboard')}}" class="btn btn-primary">
-        <i class="bi bi-arrow-left mx-2" style="font-size:50px; font-weight:900"></i>
+        New Sale Form <i class="bi bi-arrow-left mx-2" style="font-size:50px; font-weight:900"></i>
     </a>
 
     <!-- partial:partials/_navbar.html -->
