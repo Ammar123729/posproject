@@ -571,13 +571,15 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @foreach($allparty as $party)
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td>{{$party->date}}</td>
+                                                <td>{{$party->party_name}}</td>
+                                                <td>{{$party->email}}</td>
+                                                <td>{{$party->phone}}</td>
+                                                <td>{{$party->address}}</td>
                                             </tr>
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>
