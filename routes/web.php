@@ -165,4 +165,5 @@ Route::post('profileupdate', [AuthController::class, 'profile_update'])->name('p
 Route::post('/notifications', [NotificationController::class, 'store'])->name('notifications.store');
 Route::get('/saleinvreport', [TransctionController::class, 'get_invreport'])->name('sale.invreport');
 Route::get('/purchasereport', [TransctionController::class, 'purchase_report'])->name('purchase.report');
-Route::get('allparty',[PartyReport::class, 'allparty']);
+Route::get('/allparty',[PartyReport::class, 'allparty']);
+Route::get('/partystatement',[PartyReport::class, 'partystatement']);

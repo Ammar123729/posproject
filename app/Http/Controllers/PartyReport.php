@@ -12,4 +12,9 @@ class PartyReport extends Controller
         $allparty = AddParty::all();
         return view('partyreport.allparty', compact('allparty'));
     }
+
+    public function partystatement()
+    {
+        return view('partyreport.partystatement');
+    }
 }
