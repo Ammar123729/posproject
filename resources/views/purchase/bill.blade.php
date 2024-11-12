@@ -341,10 +341,10 @@
           </a>
           <div class="collapse" id="chart">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Sale </a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{url('saleinvreport')}}">Sale </a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Purchase</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{url('purchasereport')}}">Purchase</a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">All Transaction</a></li>
@@ -378,13 +378,13 @@
           </a>
           <div class="collapse" id="partyreport">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Party Statement </a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{url('partystatement')}}">Party Statement </a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Party Wiese Profit&Loss</a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">All parties</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{url('allparty')}}">All parties</a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Party Report By item</a></li>

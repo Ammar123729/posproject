@@ -287,158 +287,158 @@
                         <span class="menu-title">Expenses</span>
                     </a>
                 </li>
-                
+
                 <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="collapse" href="#chart" aria-expanded="false" aria-controls="chart">
-            <!--<i class="bi bi-cash-coin mdi mdi-chart-line mr-1"></i>-->
-            <i class="bi bi-cash-coin" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
-            <span class="menu-title">Transction Report</span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="chart">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Sale </a></li>
-            </ul>
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Purchase</a></li>
-            </ul>
-             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">All Transaction</a></li>
-            </ul>
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Profit & Loss</a></li>
-              
-            </ul>
-              <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Bill Wise Profit</a>
-              </li>
-            </ul>
-              <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Trail Balance Report</a>
-              </li>
-            </ul>
-              <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Balance Sheet</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        
-        <!--Party Reports-->
-             <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="collapse" href="#partyreport" aria-expanded="false" aria-controls="partyreport">
-            <!--<i class="menu-icon mdi mdi-chart-line"></i>-->
-             <i class="bi bi-person-lines-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
-            <span class="menu-title">Party Reports</span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="partyreport">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Party Statement </a></li>
-            </ul>
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Party Wiese Profit&Loss</a></li>
-            </ul>
-             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">All parties</a></li>
-            </ul>
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Party Report By item</a></li>
-              
-            </ul>
-              <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Sale Purchase By Party</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        
-        <!--Item Stock Report-->
-        
-             <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="collapse" href="#itemreport" aria-expanded="false" aria-controls="itemreport">
-            <!--<i class="menu-icon mdi mdi-chart-line"></i>-->
-              <i class="bi bi-diagram-3-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
-            <span class="menu-title">Item/Stock Report</span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="itemreport">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Stock Summary </a></li>
-            </ul>
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Item Serial Report</a></li>
-            </ul>
-             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Item Report By Party</a></li>
-            </ul>
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Item Wise Profit&Loss</a></li>
-              
-            </ul>
-              <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Low Stock Summary</a>
-              </li>
-            </ul>
-              <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Stock Detail</a>
-              </li>
-            </ul>
-              <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Item Detailt</a>
-              </li>
-            </ul>
-             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Sale/Purchase Report By Item</a>
-              </li>
-            </ul>
-             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Item Wise Discount</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        
-        <!--Bussniess Status-->
-        
-             <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="collapse" href="#bussniess" aria-expanded="false" aria-controls="bussniess">
-            <!--<i class="menu-icon mdi mdi-chart-line"></i>-->
-              <i class="bi bi-briefcase-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
-            <span class="menu-title">Bussniess Status</span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="bussniess">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Bank Statement</a></li>
-            </ul>
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Discount Report</a></li>
-            </ul>
-             
-          </div>
-        </li>
-        
-        <!--Expenses Report-->
-        
-               <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="collapse" href="#expens" aria-expanded="false" aria-controls="expens">
-            <!--<i class="menu-icon mdi mdi-chart-line"></i>-->
-              <!--<i class="bi bi-briefcase-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>-->
-               <i class="fa fa-gbp menu-icon"></i>
-            <span class="menu-title">Epenses Report</span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="expens">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Expenses</a></li>
-            </ul>
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Expenses Item Report</a></li>
-            </ul>
-             
-          </div>
-        </li>
+                    <a class="nav-link" data-bs-toggle="collapse" href="#chart" aria-expanded="false" aria-controls="chart">
+                        <!--<i class="bi bi-cash-coin mdi mdi-chart-line mr-1"></i>-->
+                        <i class="bi bi-cash-coin" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
+                        <span class="menu-title">Transction Report</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="chart">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="{{url('saleinvreport')}}">Sale </a></li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="{{url('purchasereport')}}">Purchase</a></li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">All Transaction</a></li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Profit & Loss</a></li>
+
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Bill Wise Profit</a>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Trail Balance Report</a>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Balance Sheet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!--Party Reports-->
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#partyreport" aria-expanded="false" aria-controls="partyreport">
+                        <!--<i class="menu-icon mdi mdi-chart-line"></i>-->
+                        <i class="bi bi-person-lines-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
+                        <span class="menu-title">Party Reports</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="partyreport">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="{{url('partystatement')}}">Party Statement </a></li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Party Wiese Profit&Loss</a></li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="{{url('allparty')}}">All parties</a></li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Party Report By item</a></li>
+
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Sale Purchase By Party</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!--Item Stock Report-->
+
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#itemreport" aria-expanded="false" aria-controls="itemreport">
+                        <!--<i class="menu-icon mdi mdi-chart-line"></i>-->
+                        <i class="bi bi-diagram-3-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
+                        <span class="menu-title">Item/Stock Report</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="itemreport">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Stock Summary </a></li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Item Serial Report</a></li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Item Report By Party</a></li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Item Wise Profit&Loss</a></li>
+
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Low Stock Summary</a>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Stock Detail</a>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Item Detailt</a>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Sale/Purchase Report By Item</a>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Item Wise Discount</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!--Bussniess Status-->
+
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#bussniess" aria-expanded="false" aria-controls="bussniess">
+                        <!--<i class="menu-icon mdi mdi-chart-line"></i>-->
+                        <i class="bi bi-briefcase-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
+                        <span class="menu-title">Bussniess Status</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="bussniess">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Bank Statement</a></li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Discount Report</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+
+                <!--Expenses Report-->
+
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#expens" aria-expanded="false" aria-controls="expens">
+                        <!--<i class="menu-icon mdi mdi-chart-line"></i>-->
+                        <!--<i class="bi bi-briefcase-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>-->
+                        <i class="fa fa-gbp menu-icon"></i>
+                        <span class="menu-title">Epenses Report</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="expens">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Expenses</a></li>
+                        </ul>
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="">Expenses Item Report</a></li>
+                        </ul>
+
+                    </div>
+                </li>
             </ul>
         </nav>
 
