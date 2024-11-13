@@ -625,7 +625,8 @@ class PartyController extends Controller
 
                 $newQuantity = $addItem->item_quantity - $itemData['quantity'];
                 if ($newQuantity < 0) {
-                    return response()->json(['success' => false, 'message' => 'Not enough stock for item ID ' . $itemData['item_type']], 400);
+                    // return response()->json(['success' => false, 'message' => 'Not enough stock for item ID ' . $itemData['item_type']], 400);
+                    return redirect()->back()->with('error', 'Not enough stock for item ID ' . $itemData['item_type']);
                 }
 
                 $addItem->update(['item_quantity' => $newQuantity]);
