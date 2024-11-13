@@ -512,7 +512,7 @@
                                             @foreach($salepaymntin as $index => $paymentIn)
                                             <tr>
 
-                                                <td>{{$index +1 }}</td>
+                                                <td> <span style="color: Red; font-size:large">&#x25CF;</span></td>
                                                 <td>{{$paymentIn->date}}</td>
                                                 <td>{{$paymentIn->party->party_name}}</td>
                                                 <td>{{$paymentIn->sale_credit}}</td>
