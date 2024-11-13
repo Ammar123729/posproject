@@ -500,6 +500,7 @@
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
+                                                <th> # </th>
                                                 <th> Date </th>
                                                 <th> Party Name </th>
                                                 <th> Last Sale Credit </th>
