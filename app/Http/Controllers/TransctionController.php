@@ -155,4 +155,25 @@ class TransctionController extends Controller
         $purchasepaymntin = $query->get();
         return view('transctionreport.alltransction', compact('salepaymntin', 'purchasepaymntin'));
     }
+
+    public function profit_loss()
+    {
+
+        return view('transctionreport.profitloss');
+    }
+
+    public function bill_wise()
+    {
+        return view('transctionreport.billwise');
+    }
+    public function trail_balance()
+    {
+
+        return view('transctionreport.trailbalance');
+    }
+
+    public function balance_sheet()
+    {
+        return view('transctionreport.balance');
+    }
 }

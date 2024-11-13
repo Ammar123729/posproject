@@ -307,19 +307,19 @@
               <li class="nav-item"> <a class="nav-link" href="{{url('/alltransction')}}">All Transaction</a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Profit & Loss</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{url('/profitloss')}}">Profit & Loss</a></li>
 
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Bill Wise Profit</a>
+              <li class="nav-item"> <a class="nav-link" href="{{url('/billwise')}}">Bill Wise Profit</a>
               </li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Trail Balance Report</a>
+              <li class="nav-item"> <a class="nav-link" href="{{url('/trailbalance')}}">Trail Balance Report</a>
               </li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Balance Sheet</a>
+              <li class="nav-item"> <a class="nav-link" href="{{url('/balancesheet')}}">Balance Sheet</a>
               </li>
             </ul>
           </div>

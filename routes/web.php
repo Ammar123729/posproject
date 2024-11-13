@@ -165,6 +165,10 @@ Route::post('profileupdate', [AuthController::class, 'profile_update'])->name('p
 Route::post('/notifications', [NotificationController::class, 'store'])->name('notifications.store');
 Route::get('/saleinvreport', [TransctionController::class, 'get_invreport'])->name('sale.invreport');
 Route::get('/purchasereport', [TransctionController::class, 'purchase_report'])->name('purchase.report');
-Route::get('/allparty',[PartyReport::class, 'allparty']);
-Route::get('/partystatement',[PartyReport::class, 'partystatement']);
+Route::get('/allparty', [PartyReport::class, 'allparty']);
+Route::get('/partystatement', [PartyReport::class, 'partystatement']);
 Route::get('alltransction', [TransctionController::class, 'all_transction']);
+Route::get('/profitloss', [TransctionController::class, 'profit_loss']);
+Route::get('/billwise', [TransctionController::class, 'bill_wise']);
+Route::get('/trailbalance', [TransctionController::class, 'trail_balance']);
+Route::get('/balancesheet', [TransctionController::class, 'balance_sheet']);
