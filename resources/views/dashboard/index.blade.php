@@ -338,17 +338,17 @@
               <li class="nav-item"> <a class="nav-link" href="{{url('/partystatement')}}">Party Statement </a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Party Wiese Profit&Loss</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{url('partyprofitloss')}}">Party Wiese Profit&Loss</a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="{{url('allparty')}}">All parties</a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Party Report By item</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{url('partyreportitem')}}">Party Report By item</a></li>
 
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Sale Purchase By Party</a>
+              <li class="nav-item"> <a class="nav-link" href="{{url('salepurchaseparty')}}">Sale Purchase By Party</a>
               </li>
             </ul>
           </div>

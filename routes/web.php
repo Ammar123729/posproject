@@ -172,3 +172,6 @@ Route::get('/profitloss', [TransctionController::class, 'profit_loss']);
 Route::get('/billwise', [TransctionController::class, 'bill_wise']);
 Route::get('/trailbalance', [TransctionController::class, 'trail_balance']);
 Route::get('/balancesheet', [TransctionController::class, 'balance_sheet']);
+Route::get('/partyprofitloss', [PartyReport::class, 'party_profitloss']);
+Route::get('/partyreportitem', [PartyReport::class, 'party_reportitem']);
+Route::get('/salepurchaseparty', [PartyReport::class, 'sale_purchaseparty']);
