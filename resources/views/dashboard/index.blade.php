@@ -304,7 +304,7 @@
               <li class="nav-item"> <a class="nav-link" href="{{url('/purchasereport')}}">Purchase</a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">All Transaction</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{url('/alltransction')}}">All Transaction</a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Profit & Loss</a></li>

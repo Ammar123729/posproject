@@ -141,4 +141,9 @@ class TransctionController extends Controller
 
         return view('transctionreport.purchasereport', compact('sales', 'partyTotals', 'cashTotal', 'creditTotal', 'totalamnt'));
     }
+
+    public function all_transction()
+    {
+        return view('transctionreport.alltransction');
+    }
 }

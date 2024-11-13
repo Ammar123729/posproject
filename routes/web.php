@@ -167,3 +167,4 @@ Route::get('/saleinvreport', [TransctionController::class, 'get_invreport'])->na
 Route::get('/purchasereport', [TransctionController::class, 'purchase_report'])->name('purchase.report');
 Route::get('/allparty',[PartyReport::class, 'allparty']);
 Route::get('/partystatement',[PartyReport::class, 'partystatement']);
+Route::get('alltransction', [TransctionController::class, 'all_transction']);
