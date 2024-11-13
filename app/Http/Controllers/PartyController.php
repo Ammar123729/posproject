@@ -619,7 +619,8 @@ class PartyController extends Controller
             foreach ($request->input('items') as $itemData) {
                 $addItem = AddItem::find($itemData['item_type']);
                 if (!$addItem) {
-                    return response()->json(['success' => false, 'message' => 'Item not found in inventory.'], 400);
+                    // return response()->json(['success' => false, 'message' => 'Item not found in inventory.'], 400);
+                    return redirect()->back()->with('error', 'Item not found in inventory.');
                 }
 
                 $newQuantity = $addItem->item_quantity - $itemData['quantity'];
@@ -686,35 +687,35 @@ class PartyController extends Controller
             return view('sale.receipt', $data);
 
             // Return success response
-          return response()->json(['success' => true, 'message' => 'Sale recorded successfully!']);
-    } catch (\Exception $e) {
-        Log::error('Error processing request: ' . $e->getMessage());
-        return response()->json(['success' => false, 'message' => 'An error occurred while processing your request.'], 500);
+            return response()->json(['success' => true, 'message' => 'Sale recorded successfully!']);
+        } catch (\Exception $e) {
+            Log::error('Error processing request: ' . $e->getMessage());
+            return response()->json(['success' => false, 'message' => 'An error occurred while processing your request.'], 500);
+        }
     }
-}
 
-//print
-public function generatePDFsale($id)
-{
-    // Fetch sale data based on invoice ID
-    // You might want to modify this based on how you store your sales
-    $sale = Sale::findOrFail($id); // Assuming you are storing invoice_number as ID
+    //print
+    public function generatePDFsale($id)
+    {
+        // Fetch sale data based on invoice ID
+        // You might want to modify this based on how you store your sales
+        $sale = Sale::findOrFail($id); // Assuming you are storing invoice_number as ID
 
-    // Prepare data for PDF
-    $data = [
-        'party' => $sale->party,
-        'phone_number' => $sale->phone_number,
-        'invoice_number' => $sale->invoice_number,
-        'date' => $sale->date,
-        'payment_method' => $sale->payment_method,
-        'cash_details' => $sale->cash_details,
-        'items' => $sale->items,
-        'totalAmount' => $sale->items->sum('total'), // Assuming items have a total field
-    ];
+        // Prepare data for PDF
+        $data = [
+            'party' => $sale->party,
+            'phone_number' => $sale->phone_number,
+            'invoice_number' => $sale->invoice_number,
+            'date' => $sale->date,
+            'payment_method' => $sale->payment_method,
+            'cash_details' => $sale->cash_details,
+            'items' => $sale->items,
+            'totalAmount' => $sale->items->sum('total'), // Assuming items have a total field
+        ];
 
-    $pdf = PDF::loadView('sale.receipt', $data)->setPaper('a4', 'portrait');
-    return $pdf->download('receipt.pdf');
-}
+        $pdf = PDF::loadView('sale.receipt', $data)->setPaper('a4', 'portrait');
+        return $pdf->download('receipt.pdf');
+    }
 
 
 
