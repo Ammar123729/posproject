@@ -521,9 +521,16 @@
                                             @endforeach
 
                                             <!-- Totals for the Party -->
+                                            @foreach($purchasepaymntin as $index => $paymentout)
                                             <tr>
 
+                                                <td> <span style="color: Green; font-size:large">&#x25CF;</span></td>
+                                                <td>{{$paymentout->date}}</td>
+                                                <td>{{$paymentout->party->party_name}}</td>
+                                                <td>{{$paymentout->sale_credit}}</td>
+                                                <td>{{$paymentout->add_payment}}</td>
                                             </tr>
+                                            @endforeach
 
                                         </tbody>
                                     </table>

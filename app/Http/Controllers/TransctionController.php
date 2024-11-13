@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\AllData;
 use App\Models\Purchase;
+use App\Models\PurchasePaymentOut;
 use App\Models\Sale;
 use App\Models\SalePaymentIn;
 use Illuminate\Http\Request;
@@ -149,8 +150,9 @@ class TransctionController extends Controller
         $query = SalePaymentIn::query();
 
         $salepaymntin = $query->get();
-        $alldata = AllData::all();
 
-        return view('transctionreport.alltransction', compact('alldata', 'salepaymntin'));
+        $query = PurchasePaymentOut::query();
+        $purchasepaymntin = $query->get();
+        return view('transctionreport.alltransction', compact('salepaymntin', 'purchasepaymntin'));
     }
 }
