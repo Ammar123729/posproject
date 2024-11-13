@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AllData;
 use App\Models\Purchase;
 use App\Models\Sale;
+use App\Models\SalePaymentIn;
 use Illuminate\Http\Request;
 
 class TransctionController extends Controller
@@ -144,6 +146,11 @@ class TransctionController extends Controller
 
     public function all_transction()
     {
-        return view('transctionreport.alltransction');
+        $query = SalePaymentIn::query();
+
+        $salepaymntin = $query->get();
+        $alldata = AllData::all();
+
+        return view('transctionreport.alltransction', compact('alldata', 'salepaymntin'));
     }
 }

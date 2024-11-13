@@ -494,7 +494,7 @@
                     <div class="col-lg-12 grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Purchase Data</h4>
+                                <h4 class="card-title">Sale Transction</h4>
 
                                 <div class="table-responsive">
                                     <table class="table table-striped">
@@ -509,9 +509,16 @@
                                         </thead>
                                         <tbody>
 
+                                            @foreach($salepaymntin as $index => $paymentIn)
                                             <tr>
 
+                                                <td>{{$index +1 }}</td>
+                                                <td>{{$paymentIn->date}}</td>
+                                                <td>{{$paymentIn->party->party_name}}</td>
+                                                <td>{{$paymentIn->sale_credit}}</td>
+                                                <td>{{$paymentIn->add_payment}}</td>
                                             </tr>
+                                            @endforeach
 
                                             <!-- Totals for the Party -->
                                             <tr>
