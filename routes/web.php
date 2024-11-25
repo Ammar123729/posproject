@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CashBnakController;
 use App\Http\Controllers\ExpensesController;
+use App\Http\Controllers\ItemStockReport;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\PartyController;
 use App\Http\Controllers\PartyReport;
@@ -175,3 +176,13 @@ Route::get('/balancesheet', [TransctionController::class, 'balance_sheet']);
 Route::get('/partyprofitloss', [PartyReport::class, 'party_profitloss']);
 Route::get('/partyreportitem', [PartyReport::class, 'party_reportitem']);
 Route::get('/salepurchaseparty', [PartyReport::class, 'sale_purchaseparty']);
+
+
+Route::get('/itemparty', [ItemStockReport::class, 'item_party']);
+Route::get('/stocksumary', [ItemStockReport::class, 'stock_summary']);
+Route::get('/itemdetail', [ItemStockReport::class, 'item_detail']);
+Route::get('/itemwisediscount', [ItemStockReport::class, 'item_wise_discount']);
+Route::get('/itemwiseprofitloss', [ItemStockReport::class, 'item_wise_profit_loss']);
+Route::get('/lowstocksummary', [ItemStockReport::class, 'low_stock_summary']);
+Route::get('/salepurchasereportitem', [ItemStockReport::class, 'sale_purchase_report_item']);
+Route::get('/stockdetail', [ItemStockReport::class, 'stock_detail']);

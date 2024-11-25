@@ -365,36 +365,36 @@
           </a>
           <div class="collapse" id="itemreport">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Stock Summary </a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{url('stocksumary')}}">Stock Summary </a></li>
             </ul>
-            <ul class="nav flex-column sub-menu">
+            <!-- <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Item Serial Report</a></li>
+            </ul> -->
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="{{url('itemparty')}}">Item Report By Party</a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Item Report By Party</a></li>
-            </ul>
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Item Wise Profit&Loss</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{url('itemwiseprofitloss')}}">Item Wise Profit&Loss</a></li>
 
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Low Stock Summary</a>
+              <li class="nav-item"> <a class="nav-link" href="{{url('lowstocksummary')}}">Low Stock Summary</a>
               </li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Stock Detail</a>
+              <li class="nav-item"> <a class="nav-link" href="{{url('stockdetail')}}">Stock Detail</a>
               </li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Item Detailt</a>
+              <li class="nav-item"> <a class="nav-link" href="{{url('itemdetail')}}">Item Detailt</a>
               </li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Sale/Purchase Report By Item</a>
+              <li class="nav-item"> <a class="nav-link" href="{{url('salepurchasereportitem')}}">Sale/Purchase Report By Item</a>
               </li>
             </ul>
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="">Item Wise Discount</a>
+              <li class="nav-item"> <a class="nav-link" href="{{url('itemwisediscount')}}">Item Wise Discount</a>
               </li>
             </ul>
           </div>
