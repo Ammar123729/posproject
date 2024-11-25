@@ -571,16 +571,16 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @foreach ($partyData as $index => $data)
                                             <tr>
-
+                                                <td>{{ $index + 1 }}</td>
+                                                <td>{{ $data['party_name'] }}</td>
+                                                <td>{{ $data['sale_quantity'] }}</td>
+                                                <td>{{ $data['sale_amount'] }}</td>
+                                                <td>{{ $data['purchase_quantity'] }}</td>
+                                                <td>{{ $data['purchase_amount'] }}</td>
                                             </tr>
-
-                                            <tr>
-
-
-                                            </tr>
-
-
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>
