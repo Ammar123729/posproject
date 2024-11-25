@@ -53,7 +53,7 @@
                             </ul>
                         </div>
                         @endif
-                        <h2 class="form-title">Logined </h2>
+                        <h2 class="form-title">Logind </h2>
                         <form method="POST" action="{{url('loginstore')}}" class="register-form" id="login-form">
                             @csrf
                             <div class="form-group">
