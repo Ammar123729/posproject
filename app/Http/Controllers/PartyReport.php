@@ -29,13 +29,13 @@ class PartyReport extends Controller
 
     public function party_reportitem()
     {
-        $records = AddParty::with(['sale.Items', 'purchase.Items'])->get();
+        $records = AddParty::with(['sale.items', 'purchase.items'])->get();
 
         $partyData = $records->map(function ($party) {
-            $saleQuantity = $party->sales->sum(fn($sale) => $sale->Items->sum('quantity'));
-            $saleAmount = $party->sales->sum(fn($sale) => $sale->Items->sum('total'));
-            $purchaseQuantity = $party->purchases->sum(fn($purchase) => $purchase->Items->sum('quantity'));
-            $purchaseAmount = $party->purchases->sum(fn($purchase) => $purchase->Items->sum('total'));
+            $saleQuantity = $party->sales->flatMap->items->sum('quantity') ?? 0;
+            $saleAmount = $party->sales->flatMap->items->sum('total') ?? 0;
+            $purchaseQuantity = $party->purchases->flatMap->items->sum('quantity') ?? 0;
+            $purchaseAmount = $party->purchases->flatMap->items->sum('total') ?? 0;
 
             return [
                 'party_name' => $party->name,
