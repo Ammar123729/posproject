@@ -490,6 +490,66 @@
         <div class="main-panel">
             <div class="content-wrapper">
                 <div class="row">
+                    <div class="col-12 grid-margin stretch-card">
+                        <div class="card ">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card-body">
+                                        <!-- <h4 class="card-title">Single color buttons</h4>
+                        <p class="card-description">Add class <code>.btn-{color}</code> for buttons in theme colors</p> -->
+                                        <div class="row">
+                                            <!-- <div class="col-md-3">
+                        <select class="selectpicker form-control  rounded shadow">
+                          <option value="Ultrasound Knee Right" selected>Selected the Row</option>
+                          <option value="Ultrasound Knee Left">Ultrasound Knee Left</option>
+                          <option value="MRI Knee Right">MRI Knee Right</option>
+                          <option value="MRI Knee Left">MRI Knee Left</option>
+                          <option value="MRI Forearm/Elbow Right">MRI Forearm/Elbow Right</option>
+                          <option value="MRI Forearm/Elbow Left">MRI Forearm/Elbow Left</option>
+                          <option value="CT Knee Right">CT Knee Right</option>
+                          <option value="CT Knee Left">CT Knee Left</option>
+                        </select>
+                      </div> -->
+                                            <!-- <div class="col-md-7">
+                        <div class="input-daterange input-group" id="datepicker">
+                          <input id="start" type="date" class="form-control rounded shadow" name="start" />
+                          <span class="input-group-addon " style="margin: 5px 10px 0px 10px;">to</span>
+                          <input id="end" type="date" class=" form-control rounded  shadow" name="end" />
+                        </div>
+                      </div> -->
+
+                                            <div class="col-md-7">
+                                                <form method="GET" action="">
+                                                    <div class="input-daterange input-group" id="datepicker">
+                                                        <input id="start" type="date" class="form-control rounded shadow" name="start" value="" />
+                                                        <span class="input-group-addon" style="margin: 5px 10px 0px 10px;">to</span>
+                                                        <input id="end" type="date" class="form-control rounded shadow" name="end" value="" />
+                                                        <button type="submit" class="btn btn-primary">Filter</button>
+                                                    </div>
+                                            </div>
+                                            </form>
+                                            <!-- <div class="col-md-1">
+                        <h5 class="text-end mt-2"> Print <i class="fa fa-print" aria-hidden="true"></i></h5>
+                      </div> -->
+                                            <div class="col-md-3">
+                                                <h5 class="text-end mt-2">
+                                                    <a href="" target="_blank">
+                                                        Print <i class="fa fa-print" aria-hidden="true"></i>
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <h5 class="mt-2"> Excel <i class="bi bi-filetype-xls"></i></h5>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                     <!--2nd card-->
                     <div class="col-lg-12 grid-margin stretch-card">
                         <div class="card">
@@ -501,10 +561,9 @@
                                         <thead>
                                             <tr>
                                                 <th> # </th>
-                                                <th> Date </th>
                                                 <th> Party Name </th>
-                                                <th> Last Sale Credit </th>
-                                                <th> Add Payment</th>
+                                                <th> Sale Amount </th>
+                                                <th> Purchase Amount</th>
 
                                             </tr>
                                         </thead>
