@@ -575,6 +575,7 @@
                                                 <td> {{$data['cash_details']}}</td>
                                                 <td> {{$data['cash_details']}}</td>
                                             </tr>
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>
