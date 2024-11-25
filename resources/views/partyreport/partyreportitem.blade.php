@@ -503,8 +503,10 @@
                                                 <th> # </th>
                                                 <th> Date </th>
                                                 <th> Party Name </th>
-                                                <th> Last Sale Credit </th>
-                                                <th> Add Payment</th>
+                                                <th> Sale Quantitiy </th>
+                                                <th> Sale Amount</th>
+                                                <th> Purchase Quantitiy </th>
+                                                <th> Purchase Amount</th>
 
                                             </tr>
                                         </thead>
