@@ -36,9 +36,8 @@ class PartyReport extends Controller
                 $saleAmount = $party->sale->sum(fn($sale) => $sale->items->sum('total'));
                 // $purchaseQuantity = $party->purchase->items->sum('quantity');
                 // $purchaseAmount = $party->purchase->items->sum('total');
-                $purchaseQuantity = $party->purchase ? $party->purchase->items->sum('quantity') : 0;
-                $purchaseAmount = $party->purchase ? $party->purchase->items->sum('total') : 0;
-
+                $purchaseQuantity = $party->purchase->sum(fn($purchase) => $purchase->items->sum('quantity'));
+                $purchaseAmount = $party->purchase->sum(fn($purchase) => $purchase->items->sum('total'));
 
                 return [
                     'party_name' => $party->party_name,
