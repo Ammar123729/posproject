@@ -570,16 +570,16 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @foreach($itemsummary as $index => $item)
                                             <tr>
-
+                                                <td>{{$item->date}}</td>
+                                                <td>{{$item->item_name}}</td>
+                                                <td>{{$item->item_saleprice}}</td>
+                                                <td>{{$item->item_purchaseprice}}</td>
+                                                <td>{{$item->item_quantity}}</td>
+                                                <td>{{$item->totalvalue}}</td>
                                             </tr>
-
-                                            <tr>
-
-
-                                            </tr>
-
-
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>

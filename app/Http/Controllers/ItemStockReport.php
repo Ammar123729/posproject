@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AddItem;
 use Illuminate\Http\Request;
 
 class ItemStockReport extends Controller
@@ -13,7 +14,11 @@ class ItemStockReport extends Controller
 
     public function stock_summary()
     {
-        return view('itemstockreport.stocksummary');
+        $itemsummary = AddItem::all()->map(function ($item) {
+            $item->totalvalue = $item->item_purchaseprice * $item->item_quantity;
+            return $item;
+        });
+        return view('itemstockreport.stocksummary', compact('itemsummary'));
     }
 
     public function item_detail()
