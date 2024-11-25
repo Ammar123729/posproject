@@ -30,7 +30,7 @@ class PartyReport extends Controller
     public function party_reportitem()
     {
         $records = AddParty::with(['sale.items', 'purchase.items'])->get();
-
+        dd($records);
         $partyData = $records->map(function ($party) {
             // Use the null-safe operator `?` to handle missing relationships
             $saleQuantity = $party->sale->flatMap(fn($sale) => $sale->items)->sum('quantity') ?? 0;
