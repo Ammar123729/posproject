@@ -34,8 +34,11 @@ class PartyReport extends Controller
             ->map(function ($party) {
                 $saleQuantity = $party->sale->sum(fn($sale) => $sale->items->sum('quantity'));
                 $saleAmount = $party->sale->sum(fn($sale) => $sale->items->sum('total'));
-                $purchaseQuantity = $party->purchase->items->sum('quantity');
-                $purchaseAmount = $party->purchase->items->sum('total');
+                // $purchaseQuantity = $party->purchase->items->sum('quantity');
+                // $purchaseAmount = $party->purchase->items->sum('total');
+                $purchaseQuantity = $party->purchase ? $party->purchase->items->sum('quantity') : 0;
+                $purchaseAmount = $party->purchase ? $party->purchase->items->sum('total') : 0;
+
 
                 return [
                     'party_name' => $party->party_name,
