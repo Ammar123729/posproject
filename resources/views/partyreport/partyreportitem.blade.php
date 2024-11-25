@@ -574,6 +574,7 @@
                                             @foreach ($data as $index => $data)
                                             <tr>
                                                 <td>{{ $index + 1 }}</td>
+                                                <td>{{ $data['date'] }}</td>
                                                 <td>{{ $data['party_name'] }}</td>
                                                 <td>{{ $data['sale_quantity'] }}</td>
                                                 <td>{{ $data['sale_amount'] }}</td>
