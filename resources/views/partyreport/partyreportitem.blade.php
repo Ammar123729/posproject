@@ -571,7 +571,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach ($partyData as $index => $data)
+                                            @foreach ($data as $index => $data)
                                             <tr>
                                                 <td>{{ $index + 1 }}</td>
                                                 <td>{{ $data['party_name'] }}</td>
