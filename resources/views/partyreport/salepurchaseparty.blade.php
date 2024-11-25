@@ -568,16 +568,13 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @foreach($reportdata as $index => $data)
                                             <tr>
-
+                                                <td>{{$index +1}}</td>
+                                                <td> {{$data['party_name']}}</td>
+                                                <td> {{$data['cash_details']}}</td>
+                                                <td> {{$data['cash_details']}}</td>
                                             </tr>
-
-                                            <tr>
-
-
-                                            </tr>
-
-
                                         </tbody>
                                     </table>
                                 </div>

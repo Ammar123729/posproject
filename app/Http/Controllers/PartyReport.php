@@ -56,6 +56,18 @@ class PartyReport extends Controller
 
     public function sale_purchaseparty()
     {
-        return view('partyreport.salepurchaseparty');
+        $reportdata = AddParty::with('sale', 'purchase')->get()->map(function ($party) {
+            $saleam = $party->sale->sum('cash_details');
+            $purchaseam = $party->purchase->sum('cash_details');
+
+            return [
+                'party_name' => $party->party_name,
+                'cash_details' => $saleam,
+                'cash_details' => $purchaseam
+            ];
+        });
+
+
+        return view('partyreport.salepurchaseparty', compact('reportdata'));
     }
 }
