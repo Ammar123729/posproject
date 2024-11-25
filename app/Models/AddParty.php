@@ -29,7 +29,7 @@ class AddParty extends Model
 
     public function purchase()
     {
-        return $this->belongsTo(Purchase::class, 'party_name');
+        return $this->hasMany(Purchase::class, 'party_name');
     }
 
     public function items()
