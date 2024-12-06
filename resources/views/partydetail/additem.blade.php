@@ -23,7 +23,10 @@
   @media (max-width:425px) {
     .med {
       width: 115%;
+    }
 
+    .diy {
+      width: 60%
     }
 
     .aji {
@@ -566,7 +569,7 @@
               </div>
             </div>
             <div style="display: block;">
-              <div class="col-md-12 col-sm-12 grid-margin stretch-card " style="width: 88%;">
+              <div class="col-md-12 col-sm-12 grid-margin stretch-card diy" style="width: 88%;">
                 <div class="card ">
                   <div class="row">
                     @if(isset($selectitem))
