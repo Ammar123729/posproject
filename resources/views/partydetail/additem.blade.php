@@ -25,9 +25,7 @@
       width: 115%;
     }
 
-    .diy {
-      width: 60%
-    }
+
 
     .aji {
       width: 60%;
