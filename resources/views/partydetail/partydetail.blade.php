@@ -615,32 +615,31 @@
                         <i class="ti-user"></i> Block buttons </button> -->
 
                   <div class="template-demo d-grid gap-2 mt-4">
-                    <div class="row">
-                      <div class="col-xl-6 col-md-6 col-sm-6 text-center mod">
-                        <h4 class="">Party Name</h4>
-                        @foreach($getparty as $party)
-                        <h5 class="text text-secondary" style="margin-bottom:-10px;">
-                          <!-- Form to handle the party name click -->
-                          <form action="{{ route('party.detail') }}" method="GET" class="d-inline">
-                            <input type="hidden" name="party_id" value="{{ $party->id }}">
-                            <button type="submit" class="btn btn-link text-decoration-none">
-                              <span style="font-weight:700"> {{ $party->party_name }} </span>
-                            </button>
-                          </form>
-                        </h5>
-                        @endforeach
+                    <div class="row text-center">
+                      <h4 class="col-6">Party Name</h4>
+                      <h4 class="col-6">Amount</h4>
+                    </div>
+                    @foreach($getparty as $party)
+                    <div class="row align-items-center">
+                      <!-- Party Name -->
+                      <div class="col-6 text-center">
+                        <form action="{{ route('party.detail') }}" method="GET" class="d-inline">
+                          <input type="hidden" name="party_id" value="{{ $party->id }}">
+                          <button type="submit" class="btn btn-link text-decoration-none">
+                            <span style="font-weight: 700;">{{ $party->party_name }}</span>
+                          </button>
+                        </form>
                       </div>
-
-                      <div class="col-xl-6 col-md-6 col-sm-6 text-end mde">
-                        <h4 class="mb-3">Amount</h4>
-                        @foreach($getparty as $party)
-                        <h5 class="text text-success" style="margin-top: 18px;">
-                          <span style="font-weight: 700;"> {{ $party->opening_balance ?? 0 }} </span>
+                      <!-- Opening Balance -->
+                      <div class="col-6 text-center">
+                        <h5 class="text text-success">
+                          <span style="font-weight: 700;">{{ $party->opening_balance ?? 0 }}</span>
                         </h5>
-                        @endforeach
                       </div>
                     </div>
+                    @endforeach
                   </div>
+
                 </div>
               </div>
             </div>
