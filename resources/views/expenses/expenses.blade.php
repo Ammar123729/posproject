@@ -513,7 +513,7 @@
                         <h5 class="text-end mt-2">
                           Print
                           <i class="fa fa-print" aria-hidden="true" onclick="printTable()" style="cursor: pointer;"></i>
-                          | PDF
+
                           <i class="fa fa-file-pdf" aria-hidden="true" onclick="generatePDF()" style="cursor: pointer;"></i>
                         </h5>
                       </div>
