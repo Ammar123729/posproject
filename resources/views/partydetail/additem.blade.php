@@ -566,8 +566,8 @@
               </div>
             </div>
             <div style="display: block;">
-              <div class="col-md-12 col-sm-12 grid-margin stretch-card aji" style="width: 99%;">
-                <div class="card">
+              <div class="col-md-12 col-sm-12 grid-margin stretch-card " style="width: 99%;">
+                <div class="card aji">
                   <div class="row">
                     @if(isset($selectitem))
                     <div class="col-md-7">
