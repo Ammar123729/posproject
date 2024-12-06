@@ -708,49 +708,57 @@
 
 
                       <!--You Will PAy-->
-                      <div class="col-6 grid-margin stretch-card">
+                      <div class="col-12 col-md-6 grid-margin stretch-card">
                         <div class="card card-rounded">
                           <div class="card-body">
                             <div class="d-sm-flex justify-content-between align-items-start">
                               <div>
                                 <h4 class="card-title card-title-dash">You Have Pay</h4>
-                                <!-- <p class="card-subtitle card-subtitle-dash">Lorem ipsum dolor sit amet consectetur adipisicing elit</p> -->
                               </div>
-
                             </div>
+
                             <div id="data-container">
                               @foreach($purchasedata as $index => $data)
                               @if ($index < 3)
-                                <h6 class="mt-2 text-end text-danger mb-3">
-                                <span style="margin-right: 100px;">{{$data->party->party_name}}</span>
-                                <span class="mx-5">{{$data->add_payment}}</span>
-                                </h6>
-                                @endif
-                                @endforeach
+                                <div class="row mb-3">
+                                <div class="col-6 text-end">
+                                  <span>{{$data->party->party_name}}</span>
+                                </div>
+                                <div class="col-6 text-start">
+                                  <span class="text-danger">{{$data->add_payment}}</span>
+                                </div>
                             </div>
-
-                            @if($purchasedata->count() > 3)
-                            <button id="view-mores" class="btn btn-outline-link no-underline" style="display: block; margin-top: 10px;">
-                              <a href="{{route('purchase.payment')}}">View More</a>
-                            </button>
                             @endif
+                            @endforeach
+                          </div>
 
-                            <div id="additional-datas" style="display: none;">
-                              @foreach($purchasedata as $index => $data)
-                              @if ($index >= 3)
-                              <h6 class="mt-2 text-end text-danger">
-                                <span style="margin-right: 100px;">{{$data->party->party_name}}</span>
-                                <span class="mx-5">{{$data->add_payment}}</span>
-                              </h6>
-                              @endif
-                              @endforeach
+                          @if($purchasedata->count() > 3)
+                          <button id="view-mores" class="btn btn-outline-link no-underline" style="display: block; margin-top: 10px;">
+                            <a href="{{route('purchase.payment')}}">View More</a>
+                          </button>
+                          @endif
+
+                          <div id="additional-datas" style="display: none;">
+                            @foreach($purchasedata as $index => $data)
+                            @if ($index >= 3)
+                            <div class="row mb-3">
+                              <div class="col-6 text-end">
+                                <span>{{$data->party->party_name}}</span>
+                              </div>
+                              <div class="col-6 text-start">
+                                <span class="text-danger">{{$data->add_payment}}</span>
+                              </div>
                             </div>
+                            @endif
+                            @endforeach
                           </div>
                         </div>
                       </div>
-                      <!--End-->
                     </div>
-                    <!-- <div class="row flex-grow">
+
+                    <!--End-->
+                  </div>
+                  <!-- <div class="row flex-grow">
                         <div class="col-12 grid-margin stretch-card">
                           <div class="card card-rounded table-darkBGImg">
                             <div class="card-body">
@@ -762,7 +770,7 @@
                           </div>
                         </div>
                       </div> -->
-                    <!-- <div class="row flex-grow">
+                  <!-- <div class="row flex-grow">
                         <div class="col-12 grid-margin stretch-card">
                           <div class="card card-rounded">
                             <div class="card-body">
@@ -974,7 +982,7 @@
                           </div>
                         </div>
                       </div> -->
-                    <!-- <div class="row flex-grow">
+                  <!-- <div class="row flex-grow">
                         <div class="col-md-6 col-lg-6 grid-margin stretch-card">
                           <div class="card card-rounded">
                             <div class="card-body card-rounded">
@@ -1095,31 +1103,31 @@
                           </div>
                         </div>
                       </div> -->
-                  </div>
-
-
                 </div>
+
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      document.getElementById('view-more').addEventListener('click', function() {
-        var additionalData = document.getElementById('additional-data');
-        if (additionalData.style.display === 'none') {
-          additionalData.style.display = 'block';
-          this.style.display = 'none'; // Hide the "View More" button after clicking
-        }
-      });
+  </div>
+  <script>
+    document.getElementById('view-more').addEventListener('click', function() {
+      var additionalData = document.getElementById('additional-data');
+      if (additionalData.style.display === 'none') {
+        additionalData.style.display = 'block';
+        this.style.display = 'none'; // Hide the "View More" button after clicking
+      }
+    });
 
-      document.getElementById('view-mores').addEventListener('click', function() {
-        var additionalData = document.getElementById('additional-datas');
-        if (additionalData.style.display === 'none') {
-          additionalData.style.display = 'block';
-          this.style.display = 'none'; // Hide the "View More" button after clicking
-        }
-      });
-    </script>
-    @include('sidebar.footbar')
+    document.getElementById('view-mores').addEventListener('click', function() {
+      var additionalData = document.getElementById('additional-datas');
+      if (additionalData.style.display === 'none') {
+        additionalData.style.display = 'block';
+        this.style.display = 'none'; // Hide the "View More" button after clicking
+      }
+    });
+  </script>
+  @include('sidebar.footbar')
