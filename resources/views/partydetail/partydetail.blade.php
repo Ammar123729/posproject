@@ -5,6 +5,10 @@
       width: 100%;
 
     }
+
+    .mod {
+      margin-left: -20px;
+    }
   }
 </style>
 <div class="container-scroller">
@@ -594,7 +598,7 @@
 
                   <div class="template-demo d-grid gap-2 mt-4">
                     <div class="row">
-                      <div class="col-xl-6 col-md-6 col-sm-6 text-center ">
+                      <div class="col-xl-6 col-md-6 col-sm-6 text-center mod">
                         <h4 class="">Party Name</h4>
                         @foreach($getparty as $party)
                         <h5 class="text text-secondary" style="margin-bottom:-10px;">
@@ -609,7 +613,7 @@
                         @endforeach
                       </div>
 
-                      <div class="col-xl-6 col-md-6 col-sm-6 text-end">
+                      <div class="col-xl-6 col-md-6 col-sm-6 text-end mde">
                         <h4 class="mb-3">Amount</h4>
                         @foreach($getparty as $party)
                         <h5 class="text text-success" style="margin-top: 18px;">
