@@ -27,7 +27,7 @@
     }
 
     .aji {
-      width: 30%;
+      width: 40%;
     }
 
     .mdel {
