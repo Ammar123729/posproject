@@ -12,7 +12,8 @@
     }
 
     .mde {
-      margin-top: -100px;
+      /* margin-top: -100px; */
+      width: 50%;
     }
   }
 </style>
