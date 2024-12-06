@@ -8,7 +8,7 @@
 
   @media (max-width:1024px) {
     .adj {
-      display: flex;
+      flex-wrap: wrap;
     }
   }
 
