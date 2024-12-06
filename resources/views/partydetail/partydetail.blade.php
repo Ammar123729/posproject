@@ -1,5 +1,11 @@
 @include('sidebar.head')
 <style>
+  @media (max-width:768px) {
+    .adj {
+      display: flex-wrap;
+    }
+  }
+
   @media (max-width:425px) {
     .med {
       width: 115%;
@@ -483,7 +489,7 @@
       <div class="content-wrapper">
         <div class="row">
 
-          <div style="display: flex;">
+          <div style="display: flex;" class="adj">
             <div class="col-xl-4 col-md-12 col-sm-12 grid-margin stretch-card med" style="margin-right: 20px;">
               <div class="card">
                 <div class="card-body">
