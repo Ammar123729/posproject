@@ -616,13 +616,13 @@
 
                   <div class="template-demo d-grid gap-2 mt-4">
                     <div class="row text-center">
-                      <h4 class="col-6">Party Name</h4>
-                      <h4 class="col-6">Amount</h4>
+                      <h4 class="col-6 mb-2">Party Name</h4>
+                      <h4 class="col-6 mb-2">Amount</h4>
                     </div>
                     @foreach($getparty as $party)
                     <div class="row align-items-center">
                       <!-- Party Name -->
-                      <div class="col-6 text-center m-0">
+                      <div class="col-6 text-center">
                         <form action="{{ route('party.detail') }}" method="GET" class="d-inline">
                           <input type="hidden" name="party_id" value="{{ $party->id }}">
                           <button type="submit" class="btn btn-link text-decoration-none">
@@ -631,7 +631,7 @@
                         </form>
                       </div>
                       <!-- Opening Balance -->
-                      <div class="col-6 text-center m-0">
+                      <div class="col-6 text-center">
                         <h5 class="text text-success">
                           <span style="font-weight: 700;">{{ $party->opening_balance ?? 0 }}</span>
                         </h5>
