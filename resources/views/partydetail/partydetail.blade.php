@@ -622,7 +622,7 @@
                     @foreach($getparty as $party)
                     <div class="row align-items-center">
                       <!-- Party Name -->
-                      <div class="col-6 text-center mt-0">
+                      <div class="col-6 text-center m-0">
                         <form action="{{ route('party.detail') }}" method="GET" class="d-inline">
                           <input type="hidden" name="party_id" value="{{ $party->id }}">
                           <button type="submit" class="btn btn-link text-decoration-none">
@@ -631,7 +631,7 @@
                         </form>
                       </div>
                       <!-- Opening Balance -->
-                      <div class="col-6 text-center mt-0">
+                      <div class="col-6 text-center m-0">
                         <h5 class="text text-success">
                           <span style="font-weight: 700;">{{ $party->opening_balance ?? 0 }}</span>
                         </h5>
