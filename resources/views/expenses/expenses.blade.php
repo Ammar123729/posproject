@@ -506,12 +506,12 @@
                           </div>
                         </form>
                       </div>
-                      <!-- <div class="col-md-4">
+                      <div class="col-md-4">
                         <h5 class="text-end mt-2"> Print <i class="fa fa-print" aria-hidden="true"></i></h5>
                       </div>
                       <div class="col-md-1">
                         <h5 class="mt-2"> Excel <i class="bi bi-filetype-xls"></i></h5>
-                      </div> -->
+                      </div>
 
                       <div class="col-md-3 mt-4">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
