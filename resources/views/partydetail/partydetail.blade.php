@@ -1,4 +1,19 @@
 @include('sidebar.head')
+<style>
+  @media (max-width: 725px) {
+    .template-demo .row {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .col-md-6.col-6 {
+      flex: 1;
+      text-align: center;
+    }
+  }
+</style>
 <div class="container-scroller">
 
   <!-- partial:partials/_navbar.html -->
@@ -466,25 +481,25 @@
         <div class="row">
 
           <div style="display: flex;">
-            <div class="col-md-4 col-12 grid-margin stretch-card mb-3">
+            <div class="col-md-4 col-12 grid-margin stretch-card" style="margin-right: 20px;">
               <div class="card">
                 <div class="card-body">
-                  <p>
-                    @if(session('success'))
+                  <!-- Success Message -->
+                  @if(session('success'))
                   <div class="alert alert-success">
-                    {{ session('success') }}
+                    {{session('success')}}
                   </div>
                   @endif
-                  </p>
+
+                  <!-- Add Party Button -->
                   <div class="text-end">
                     <div class="btn-group">
-                      <!-- Main button -->
                       <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i class="bi bi-plus" style="font-size: large; margin-left: -20px;"></i>
                         <span style="margin-left: 10px;">Add Party</span>
                       </button>
-                      <!-- Model -->
-                      <form action="{{ route('add.party') }}" method="POST">
+                      <!-- Modal Content -->
+                      <form action="{{route('add.party')}}" method="POST">
                         @csrf
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog modal-md">
@@ -494,59 +509,26 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
-                                <div id="firstStep">
-                                  <div class="mb-3">
-                                    <label for="partyName" class="form-label">Party Name</label>
-                                    <input type="text" name="party_name" class="form-control" id="partyName" placeholder="Enter party name" required>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="amount" class="form-label">Phone Number</label>
-                                    <input type="number" name="phone" class="form-control" id="amount" placeholder="Enter Phone Number" required>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" required>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="address" class="form-label">Address</label>
-                                    <input type="text" name="address" class="form-control" id="address" placeholder="Enter Address" required>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="date" class="form-label">Date</label>
-                                    <input type="date" name="date" class="form-control" id="date" required>
-                                  </div>
+                                <!-- Form Fields -->
+                                <div class="mb-3">
+                                  <label for="partyName" class="form-label">Party Name</label>
+                                  <input type="text" name="party_name" class="form-control" id="partyName" placeholder="Enter party name" required>
                                 </div>
-
-                                <p id="descriptionText" class="text-primary d-inline me-3" style="cursor: pointer; font-weight: bold;">Credit's & Balance</p>
-                                <p id="addFieldsText" class="text-primary d-inline" style="cursor: pointer; font-weight: bold;">Add Additional Fields</p>
-                                <hr>
-
-                                <div id="descriptionField" style="display: none;">
-                                  <div class="mb-3">
-                                    <label for="openingBalance" class="form-label">Opening Balance</label>
-                                    <input type="number" name="opening_balance" class="form-control" id="openingBalance" placeholder="Enter Opening Balance">
-                                  </div>
-                                  <div class="form-check form-switch" style="margin-left: 40px;">
-                                    <input class="form-check-input" type="checkbox" id="switchToggle" role="switch">
-                                    <label class="form-check-label" for="switchToggle">Credit's Limit's</label>
-                                  </div>
-                                  <div id="toggleInputField" style="display: none;">
-                                    <div class="mb-3">
-                                      <label for="toggleInput" class="form-label">Add Credit's Limit</label>
-                                      <input type="text" name="credit_limit" class="form-control" id="toggleInput" placeholder="Enter Credit's Limit">
-                                    </div>
-                                  </div>
+                                <div class="mb-3">
+                                  <label for="amount" class="form-label">Phone Number</label>
+                                  <input type="number" name="phone" class="form-control" id="amount" placeholder="Enter Phone Number" required>
                                 </div>
-
-                                <div id="additionalFields" style="display: none;">
-                                  <div class="mb-3">
-                                    <label for="fieldName1" class="form-label">Field 1</label>
-                                    <input type="text" name="fieldone" class="form-control" id="fieldName1" placeholder="Enter field 1">
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="fieldName2" class="form-label">Field 2</label>
-                                    <input type="text" name="fieldtwo" class="form-control" id="fieldName2" placeholder="Enter field 2">
-                                  </div>
+                                <div class="mb-3">
+                                  <label for="email" class="form-label">Email</label>
+                                  <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="address" class="form-label">Address</label>
+                                  <input type="text" name="address" class="form-control" id="address" placeholder="Enter Address" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="date" class="form-label">Date</label>
+                                  <input type="date" name="date" class="form-control" id="date" required>
                                 </div>
                                 <button class="btn btn-primary">Save</button>
                               </div>
@@ -554,37 +536,30 @@
                           </div>
                         </div>
                       </form>
-
-                      <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="visually-hidden">Toggle Dropdown</span>
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Import Excel file</a></li>
-                      </ul>
                     </div>
                   </div>
 
-                  <div class="template-demo d-grid gap-2 mt-4">
-                    <div class="row">
-                      <div class="col-md-6 col-12 text-center mb-3">
-                        <h4 class="">Party Name</h4>
+                  <!-- Party Name and Amount -->
+                  <div class="template-demo mt-4">
+                    <div class="row d-flex align-items-center justify-content-between flex-wrap">
+                      <div class="col-md-6 col-6 text-center">
+                        <h4>Party Name</h4>
                         @foreach($getparty as $party)
-                        <h5 class="text text-secondary" style="margin-bottom:-10px;">
+                        <h5 class="text text-secondary">
                           <form action="{{ route('party.detail') }}" method="GET" class="d-inline">
                             <input type="hidden" name="party_id" value="{{ $party->id }}">
                             <button type="submit" class="btn btn-link text-decoration-none">
-                              <span style="font-weight: 700;">{{ $party->party_name }}</span>
+                              <span style="font-weight:700">{{ $party->party_name }}</span>
                             </button>
                           </form>
                         </h5>
                         @endforeach
                       </div>
-
-                      <div class="col-md-6 col-12 text-end">
-                        <h4 class="mb-3">Amount</h4>
+                      <div class="col-md-6 col-6 text-end">
+                        <h4>Amount</h4>
                         @foreach($getparty as $party)
-                        <h5 class="text text-success" style="margin-top: 18px;">
-                          <span style="font-weight: 700;">{{ $party->opening_balance ?? 0 }}</span>
+                        <h5 class="text text-success">
+                          <span style="font-weight:700">{{ $party->opening_balance ?? 0 }}</span>
                         </h5>
                         @endforeach
                       </div>
@@ -593,6 +568,7 @@
                 </div>
               </div>
             </div>
+
             <div style="display: block; width:100%;">
               <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
