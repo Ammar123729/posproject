@@ -594,12 +594,11 @@
               </div>
             </div>
             <div style="display: block; width:100%;">
-              <!-- Card for Cash Sale -->
               <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="row">
                     @if(isset($selectparty))
-                    <div class="col-md-7 col-12">
+                    <div class="col-md-7">
                       <div class="card-body">
                         <h4 class="card-title">CASH SALE</h4>
                         <p class="card-description" style="font-size: 16px; font-weight:700">Phone:
@@ -613,19 +612,21 @@
                         </p>
                       </div>
                     </div>
-                    <div class="col-md-5 col-12" style="height:50px;">
-                      <div class="card-body text-md-end text-center">
-                        <h2 class="card-title">
+                    <div class="col-md-5" style="height:50px;">
+                      <div class="card-body">
+                        <h2 class="card-title text-end">
                           <a> <i class="fa fa-whatsapp" aria-hidden="true" style="margin-right: 10px; color:lightgreen; font-size:larger"></i> </a>
                           <a href=""> <i class="fa fa-bell" aria-hidden="true" style="color: orange;"></i> </a>
                         </h2>
-                        <p class="card-description" style="font-size: 16px; font-weight:700">Address:
+                        <p class="card-description text-center" style="font-size: 16px; margin-left:70px; font-weight:700"> Address:
                           <i class="fa fa-address-card" aria-hidden="true"></i> <span class="text-success"> {{$selectparty->address}} </span>
                         </p>
                       </div>
                     </div>
+
+
                     @else
-                    <div class="col-md-7 col-12">
+                    <div class="col-md-7">
                       <div class="card-body">
                         <h4 class="card-title">CASH SALE</h4>
                         <p class="card-description" style="font-size: 16px; font-weight:700">Phone:
@@ -639,25 +640,26 @@
                         </p>
                       </div>
                     </div>
-                    <div class="col-md-5 col-12" style="height:50px;">
-                      <div class="card-body text-md-end text-center">
-                        <h2 class="card-title">
+                    <div class="col-md-5" style="height:50px;">
+                      <div class="card-body">
+                        <h2 class="card-title text-end">
                           <a> <i class="fa fa-whatsapp" aria-hidden="true" style="margin-right: 10px; color:lightgreen; font-size:larger"></i> </a>
+
                           <a href="#" data-bs-toggle="modal" data-bs-target="#reminderModal">
                             <i class="fa fa-bell" aria-hidden="true" style="color: orange;"></i>
                           </a>
                         </h2>
-                        <p class="card-description" style="font-size: 16px; font-weight:700">Address:
+                        <p class="card-description text-center" style="font-size: 16px; margin-left:70px; font-weight:700"> Address:
                           <i class="fa fa-address-card" aria-hidden="true"></i> <span class="text-success"> </span>
                         </p>
                       </div>
                     </div>
                     @endif
                   </div>
+
                 </div>
               </div>
-
-              <!-- Reminder Modal -->
+              <!-- Modal -->
               <div class="modal fade" id="reminderModal" tabindex="-1" aria-labelledby="reminderModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -694,18 +696,21 @@
                   </div>
                 </div>
               </div>
+              <!--End Model-->
 
-              <!-- Table -->
               <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="row">
                     <div class="col-xl-12">
                       <div class="card-body">
-                        <div class="table-responsive">
+
+                        <div class="card">
+
+                          @if(isset($selectparty) && ($purchasedata->isNotEmpty()))
                           <table class="table table-bordered table-striped data-table1" style="min-width: 100%">
                             <thead>
                               <tr>
-                                <th>#</th>
+                                <th> #</th>
                                 <th>Type</th>
                                 <th>Number</th>
                                 <th>Date</th>
@@ -714,33 +719,88 @@
                               </tr>
                             </thead>
                             <tbody>
-                              @if(isset($selectparty) && ($purchasedata->isNotEmpty()))
                               @foreach($purchasedata as $index => $purchase)
                               <tr>
-                                <td><span style="color: Green; font-size:large">&#x25CF;</span></td>
+                                <td>
+                                  <span style="color: Green; font-size:large">&#x25CF;</span>
+                                </td>
                                 <td>{{ $purchase->status ?? 'N/A' }}</td>
                                 <td>{{ $purchase->phone_number ?? 'N/A' }}</td>
                                 <td>{{ $purchase->date ? $purchase->date->format('Y-m-d') : 'N/A' }}</td>
-                                <td>{{ $purchase->items->sum('total') }}</td>
+                                <td>
+                                  {{-- Calculate the sum of the total from SaleItem --}}
+                                  @php
+                                  $total = $purchase->items->sum('total');
+                                  @endphp
+                                  {{ $total }}
+                                </td>
                                 <td>{{ $purchase->party->opening_balance ?? 'N/A' }}</td>
                               </tr>
                               @endforeach
-                              @else
+
+                              @foreach($seconddata as $index => $data)
                               <tr>
-                                <td><span style="color: Green; font-size:large">&#x25CF;</span></td>
-                                <td colspan="5">No data available</td>
+                                <td>
+                                  <span style="color: red; font-size:large">&#x25CF;</span>
+                                </td>
+                                <td>{{ $data->status ?? 'N/A' }}</td>
+                                <td>{{ $data->phone_number ?? 'N/A' }}</td>
+                                <td>{{ $data->date ? $data->date->format('Y-m-d') : 'N/A' }}</td>
+                                <td>
+                                  {{-- Calculate the sum of the total from SaleItem --}}
+                                  @php
+                                  $total = $data->items->sum('total');
+                                  @endphp
+                                  {{ $total }}
+                                </td>
+                                <td>{{ $data->party->opening_balance ?? 'N/A' }}</td>
                               </tr>
-                              @endif
+                              @endforeach
                             </tbody>
                           </table>
+
+                          @else
+
+                          <table class="table table-bordered table-striped data-table1" style="min-width: 100%">
+                            <thead>
+                              <tr>
+                                <th> #</th>
+                                <th>Type</th>
+                                <th>Number</th>
+                                <th>Date</th>
+                                <th>Total</th>
+                                <th>Balance</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+
+                              <tr>
+                                <td>
+                                  <span style="color: Green; font-size:large">&#x25CF;</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+
+                                </td>
+                                <td></td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                          @endif
+
                         </div>
+
+
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
 
         </div>
