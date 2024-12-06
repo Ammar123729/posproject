@@ -26,6 +26,10 @@
 
     }
 
+    .mdel {
+      width: 40%;
+    }
+
     .mod {
       /* margin-left: -100px; */
       width: 50%;
@@ -558,7 +562,7 @@
                   <div class="row">
                     @if(isset($selectitem))
                     <div class="col-md-7">
-                      <div class="card-body">
+                      <div class="card-body mdel">
                         <h4 class="card-title">Item Name</h4>
                         <p class="card-description">Sale Price: <i class="fa fa-money" aria-hidden="true"></i> <span class="text-success"> {{$selectitem->item_saleprice ?? 0}} </span></p>
                         <p class="card-description">Puchase Price: <i class="fa fa-money" aria-hidden="true"></i> <span class="text-success"> {{$selectitem->item_purchaseprice ?? 0}} </span> </p>
