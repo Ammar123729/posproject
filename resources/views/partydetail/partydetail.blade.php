@@ -2,7 +2,7 @@
 <style>
   @media (max-width:425px) {
     .med {
-      width: 100%;
+      width: 115%;
 
     }
 
