@@ -514,13 +514,11 @@
                             <div class="card-body">
                               <div class="d-sm-flex justify-content-between align-items-start">
                                 <h4 class="card-title card-title-dash">Sale</h4>
-                                <div class="d-flex">
+                                <div class="d-flex flex-wrap justify-content-end">
 
-
-                                  <div class="mx-5">
-
+                                  <div class="mx-3">
                                     <div class="row">
-                                      <div class="col-lg-6">
+                                      <div class="col-lg-6 col-md-6 col-sm-12">
                                         <div class="dropdown">
                                           <button class="btn btn-light dropdown-toggle toggle-dark btn-lg mb-0 me-0"
                                             type="button"
@@ -543,7 +541,7 @@
                                           </div>
                                         </div>
                                       </div>
-                                      <div class="col-lg-6">
+                                      <div class="col-lg-6 col-md-6 col-sm-12">
                                         <div class="dropdown">
                                           <button class="btn btn-light dropdown-toggle toggle-dark btn-lg mb-0 me-0"
                                             type="button"
@@ -574,10 +572,8 @@
                                 <br>
                                 <!-- Display the total cash value -->
 
-
-
-                                <!-- <div id="performanceLine-legend"></div> -->
                               </div>
+
                               <!-- <div class="chartjs-wrapper mt-4">
                                 <canvas id="performanceLine" width=""></canvas>
                               </div> -->
