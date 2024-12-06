@@ -3,7 +3,7 @@
   @media (max-width:425px) {
     .med {
       width: 100%;
-      background-color: black;
+
     }
   }
 </style>
@@ -474,7 +474,7 @@
         <div class="row">
 
           <div style="display: flex; flex-wrap: wrap;">
-            <div class="col-md-8 col-sm-8 grid-margin stretch-card" style="margin-right: 20px;">
+            <div class="col-md-8 col-sm-8 grid-margin stretch-card med" style="margin-right: 20px;">
               <div class="card">
                 <div class="card-body">
                   <!-- <div class="text-end">
@@ -594,7 +594,7 @@
 
                   <div class="template-demo d-grid gap-2 mt-4">
                     <div class="row">
-                      <div class="col-xl-6 col-md-6 col-sm-6 text-center med">
+                      <div class="col-xl-6 col-md-6 col-sm-6 text-center ">
                         <h4 class="">Party Name</h4>
                         @foreach($getparty as $party)
                         <h5 class="text text-secondary" style="margin-bottom:-10px;">
