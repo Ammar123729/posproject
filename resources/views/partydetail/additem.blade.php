@@ -7,6 +7,35 @@
   .modal {
     z-index: 1050 !important;
   }
+
+  @media (max-width:768px) {
+    .adj {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width:1024px) {
+    .adj {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width:425px) {
+    .med {
+      width: 115%;
+
+    }
+
+    .mod {
+      /* margin-left: -100px; */
+      width: 50%;
+    }
+
+    .mde {
+      /* margin-top: -100px; */
+      width: 50%;
+    }
+  }
 </style>
 <div class="container-scroller">
 
@@ -468,8 +497,8 @@
       <div class="content-wrapper">
         <div class="row">
 
-          <div style="display: flex;">
-            <div class="col-md-4 grid-margin stretch-card" style="margin-right: 20px; width:25%;">
+          <div style="display: flex; " class="adj">
+            <div class="col-xl-4 col-md-12 col-sm-12 grid-margin stretch-card" style="margin-right: 20px; width:25%;">
               <div class="card">
                 <div class="card-body">
                   <!-- <div class="text-end">
@@ -498,7 +527,7 @@
 
                   <div class="template-demo d-grid gap-2 mt-4">
                     <div class="row">
-                      <div class="col-xl-6 text-center">
+                      <div class="col-xl-6 col-md-6 col-sm-6 text-center mod">
                         <h4 class="mb-3"> Item Name</h4>
                         @foreach($getallitem as $allitem)
                         <h5 class="text text-secondary" style="margin-bottom:-12px;">
@@ -512,7 +541,7 @@
                         </h5>
                         @endforeach
                       </div>
-                      <div class="col-xl-6 text-end">
+                      <div class="col-xl-6 col-md-6 col-sm-6 text-end mde">
                         <h4 class="mb-3"> Quantity</h4>
                         @foreach($getallitem as $allitem)
                         <h5 class="text text-success mb-3"> {{$allitem->item_quantity ?? 0}}</h5>
@@ -601,7 +630,7 @@
 
                         <div class="card">
                           <div style="max-width: 800px; overflow-y: auto;">
-                          
+
                             @if(isset($selectitem) && ($saleData->isNotEmpty() || $purchaseData->isNotEmpty()))
                             <table class="table table-bordered table-striped data-table1">
                               <thead>
