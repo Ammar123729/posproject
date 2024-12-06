@@ -30,6 +30,11 @@
       width: 40%;
     }
 
+    .mdel1 {
+      width: 40%;
+      margin-left: -100px;
+    }
+
     .mod {
       /* margin-left: -100px; */
       width: 50%;
@@ -606,7 +611,7 @@
 
                       </div>
                     </div>
-                    <div class="col-md-5" style="height:50px;">
+                    <div class="col-md-5 mdel1" style="height:50px;">
                       <div class="card-body">
                         <h2 class="card-title text-end">
 
