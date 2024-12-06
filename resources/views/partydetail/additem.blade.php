@@ -27,7 +27,7 @@
     }
 
     .aji {
-      width: 50%;
+      width: 30%;
     }
 
     .mdel {
@@ -567,10 +567,10 @@
             </div>
             <div style="display: block;">
               <div class="col-md-12 col-sm-12 grid-margin stretch-card " style="width: 99%;">
-                <div class="card aji">
+                <div class="card ">
                   <div class="row">
                     @if(isset($selectitem))
-                    <div class="col-md-7">
+                    <div class="col-md-7 aji">
                       <div class="card-body mdel">
                         <h4 class="card-title">Item Name</h4>
                         <p class="card-description">Sale Price: <i class="fa fa-money" aria-hidden="true"></i> <span class="text-success"> {{$selectitem->item_saleprice ?? 0}} </span></p>
