@@ -518,7 +518,7 @@
                         </h5>
                       </div>
                       <div class="col-md-1">
-                        <h5 class="mt-2"> Excel <i class="bi bi-filetype-xls"></i></h5>
+                        <h5 class="mt-2"> Excel <i class="bi bi-filetype-xls" onclick="exportToExcel()" style="cursor: pointer;"> </i></h5>
                       </div>
 
                       <div class="col-md-3 mt-4">
@@ -619,6 +619,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
 
 <script>
   // Function to print the table
@@ -644,6 +646,20 @@
     });
 
     doc.save('expenses.pdf'); // Save as a PDF file
+  }
+
+  // Function to export table data to Excel
+  function exportToExcel() {
+    // Get the table element
+    const table = document.getElementById("expensesTable");
+
+    // Create a workbook
+    const workbook = XLSX.utils.table_to_book(table, {
+      sheet: "Sheet1"
+    });
+
+    // Convert workbook to binary and download as Excel file
+    XLSX.writeFile(workbook, "expenses.xlsx");
   }
 </script>
 @include('sidebar.footbar')
