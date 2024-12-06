@@ -2,7 +2,7 @@
 <style>
   @media (max-width:768px) {
     .adj {
-      display: flex-wrap;
+      flex-wrap: wrap;
     }
   }
 
