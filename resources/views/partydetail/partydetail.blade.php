@@ -1,4 +1,12 @@
 @include('sidebar.head')
+<style>
+  @media (max-width:425px) {
+    .med {
+      width: 100%;
+      background-color: black;
+    }
+  }
+</style>
 <div class="container-scroller">
 
   <!-- partial:partials/_navbar.html -->
@@ -586,7 +594,7 @@
 
                   <div class="template-demo d-grid gap-2 mt-4">
                     <div class="row">
-                      <div class="col-xl-6 col-md-6 col-sm-6 text-center">
+                      <div class="col-xl-6 col-md-6 col-sm-6 text-center med">
                         <h4 class="">Party Name</h4>
                         @foreach($getparty as $party)
                         <h5 class="text text-secondary" style="margin-bottom:-10px;">
