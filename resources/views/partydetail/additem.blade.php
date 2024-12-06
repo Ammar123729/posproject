@@ -557,7 +557,7 @@
                 <div class="card">
                   <div class="row">
                     @if(isset($selectitem))
-                    <div class="col-md-7">
+                    <div class="col-md-4">
                       <div class="card-body">
                         <h4 class="card-title">Item Name</h4>
                         <p class="card-description">Sale Price: <i class="fa fa-money" aria-hidden="true"></i> <span class="text-success"> {{$selectitem->item_saleprice ?? 0}} </span></p>
