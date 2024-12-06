@@ -614,7 +614,7 @@
                   <!-- <button type="button" class="btn btn-primary align-self-end">
                         <i class="ti-user"></i> Block buttons </button> -->
 
-                  <div class="template-demo d-grid gap-2 mt-4">
+                  <div class="template-demo d-grid gap-2 mt-2">
                     <div class="row text-center">
                       <h4 class="col-6">Party Name</h4>
                       <h4 class="col-6">Amount</h4>
