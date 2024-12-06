@@ -27,7 +27,7 @@
     }
 
     .mdel {
-      width: 40%;
+      width: 20%;
     }
 
     .mod {
