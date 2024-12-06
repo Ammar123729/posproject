@@ -518,7 +518,7 @@
 
                                   <div class="mx-3">
                                     <div class="row">
-                                      <div class="col-lg-6 col-md-6 col-sm-12">
+                                      <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
                                         <div class="dropdown">
                                           <button class="btn btn-light dropdown-toggle toggle-dark btn-lg mb-0 me-0"
                                             type="button"
