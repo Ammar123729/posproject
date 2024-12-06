@@ -7,7 +7,7 @@
     }
 
     .mod {
-      margin-left: -200px;
+      margin-left: -100px;
     }
   }
 </style>
