@@ -6,6 +6,12 @@
     }
   }
 
+  @media (max-width:1024px) {
+    .adj {
+      display: flex;
+    }
+  }
+
   @media (max-width:425px) {
     .med {
       width: 115%;
