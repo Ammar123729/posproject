@@ -581,7 +581,7 @@
 
                       </div>
                     </div>
-                    <div class="col-md-4" style="height:50px;">
+                    <div class="col-md-4 mdel1" style="height:50px;">
                       <div class="card-body">
                         <h2 class="card-title text-end">
 
@@ -615,7 +615,7 @@
 
                       </div>
                     </div>
-                    <div class="col-md-5 mdel1" style="height:50px;">
+                    <div class="col-md-5 " style="height:50px;">
                       <div class="card-body">
                         <h2 class="card-title text-end">
 
