@@ -307,7 +307,7 @@
             <span class="menu-title">Expenses</span>
           </a>
         </li>
-
+        
         <li class="nav-item">
           <a class="nav-link" data-bs-toggle="collapse" href="#chart" aria-expanded="false" aria-controls="chart">
             <!--<i class="bi bi-cash-coin mdi mdi-chart-line mr-1"></i>-->
@@ -322,33 +322,33 @@
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Purchase</a></li>
             </ul>
-            <ul class="nav flex-column sub-menu">
+             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">All Transaction</a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Profit & Loss</a></li>
-
+              
             </ul>
-            <ul class="nav flex-column sub-menu">
+              <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Bill Wise Profit</a>
               </li>
             </ul>
-            <ul class="nav flex-column sub-menu">
+              <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Trail Balance Report</a>
               </li>
             </ul>
-            <ul class="nav flex-column sub-menu">
+              <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Balance Sheet</a>
               </li>
             </ul>
           </div>
         </li>
-
+        
         <!--Party Reports-->
-        <li class="nav-item">
+             <li class="nav-item">
           <a class="nav-link" data-bs-toggle="collapse" href="#partyreport" aria-expanded="false" aria-controls="partyreport">
             <!--<i class="menu-icon mdi mdi-chart-line"></i>-->
-            <i class="bi bi-person-lines-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
+             <i class="bi bi-person-lines-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
             <span class="menu-title">Party Reports</span>
             <i class="menu-arrow"></i>
           </a>
@@ -359,26 +359,26 @@
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Party Wiese Profit&Loss</a></li>
             </ul>
-            <ul class="nav flex-column sub-menu">
+             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">All parties</a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Party Report By item</a></li>
-
+              
             </ul>
-            <ul class="nav flex-column sub-menu">
+              <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Sale Purchase By Party</a>
               </li>
             </ul>
           </div>
         </li>
-
+        
         <!--Item Stock Report-->
-
-        <li class="nav-item">
+        
+             <li class="nav-item">
           <a class="nav-link" data-bs-toggle="collapse" href="#itemreport" aria-expanded="false" aria-controls="itemreport">
             <!--<i class="menu-icon mdi mdi-chart-line"></i>-->
-            <i class="bi bi-diagram-3-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
+              <i class="bi bi-diagram-3-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
             <span class="menu-title">Item/Stock Report</span>
             <i class="menu-arrow"></i>
           </a>
@@ -389,42 +389,42 @@
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Item Serial Report</a></li>
             </ul>
-            <ul class="nav flex-column sub-menu">
+             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Item Report By Party</a></li>
             </ul>
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Item Wise Profit&Loss</a></li>
-
+              
             </ul>
-            <ul class="nav flex-column sub-menu">
+              <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Low Stock Summary</a>
               </li>
             </ul>
-            <ul class="nav flex-column sub-menu">
+              <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Stock Detail</a>
               </li>
             </ul>
-            <ul class="nav flex-column sub-menu">
+              <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Item Detailt</a>
               </li>
             </ul>
-            <ul class="nav flex-column sub-menu">
+             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Sale/Purchase Report By Item</a>
               </li>
             </ul>
-            <ul class="nav flex-column sub-menu">
+             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Item Wise Discount</a>
               </li>
             </ul>
           </div>
         </li>
-
+        
         <!--Bussniess Status-->
-
-        <li class="nav-item">
+        
+             <li class="nav-item">
           <a class="nav-link" data-bs-toggle="collapse" href="#bussniess" aria-expanded="false" aria-controls="bussniess">
             <!--<i class="menu-icon mdi mdi-chart-line"></i>-->
-            <i class="bi bi-briefcase-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
+              <i class="bi bi-briefcase-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>
             <span class="menu-title">Bussniess Status</span>
             <i class="menu-arrow"></i>
           </a>
@@ -435,17 +435,17 @@
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Discount Report</a></li>
             </ul>
-
+             
           </div>
         </li>
-
+        
         <!--Expenses Report-->
-
-        <li class="nav-item">
+        
+               <li class="nav-item">
           <a class="nav-link" data-bs-toggle="collapse" href="#expens" aria-expanded="false" aria-controls="expens">
             <!--<i class="menu-icon mdi mdi-chart-line"></i>-->
-            <!--<i class="bi bi-briefcase-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>-->
-            <i class="fa fa-gbp menu-icon"></i>
+              <!--<i class="bi bi-briefcase-fill" style="margin-right:10px; font-size:20px; font-weight:bold;"></i>-->
+               <i class="fa fa-gbp menu-icon"></i>
             <span class="menu-title">Epenses Report</span>
             <i class="menu-arrow"></i>
           </a>
@@ -456,7 +456,7 @@
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="">Expenses Item Report</a></li>
             </ul>
-
+             
           </div>
         </li>
       </ul>
@@ -466,25 +466,28 @@
         <div class="row">
 
           <div style="display: flex;">
-            <div class="col-md-4 col-12 grid-margin stretch-card mb-3">
+            <div class="col-md-4 grid-margin stretch-card" style="margin-right: 20px;">
               <div class="card">
                 <div class="card-body">
-                  <p>
+                  <!-- <div class="text-end">
+                    <a href="#" class="btn btn-warning">Add Party </a>
+                  </div> -->
+                  <p class="">
                     @if(session('success'))
                   <div class="alert alert-success">
-                    {{ session('success') }}
+                    {{session('success')}}
                   </div>
+
                   @endif
                   </p>
                   <div class="text-end">
                     <div class="btn-group">
                       <!-- Main button -->
-                      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="bi bi-plus" style="font-size: large; margin-left: -20px;"></i>
-                        <span style="margin-left: 10px;">Add Party</span>
-                      </button>
-                      <!-- Model -->
-                      <form action="{{ route('add.party') }}" method="POST">
+
+                      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus" style="font-size: large; margin-left: -20px;"></i> <span style="margin-left: 10px;">Add Party</span> </button>
+                      <!--Model -->
+
+                      <form action="{{route('add.party')}}" method="POST">
                         @csrf
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog modal-md">
@@ -494,6 +497,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
+                                <!-- Option Texts -->
                                 <div id="firstStep">
                                   <div class="mb-3">
                                     <label for="partyName" class="form-label">Party Name</label>
@@ -504,32 +508,38 @@
                                     <input type="number" name="phone" class="form-control" id="amount" placeholder="Enter Phone Number" required>
                                   </div>
                                   <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" required>
+                                    <label for="partyName" class="form-label">Email</label>
+                                    <input type="text" name="email" class="form-control" id="partyName" placeholder="Enter party name" required>
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label for="partyName" class="form-label">Address</label>
+                                    <input type="text" name="address" class="form-control" id="partyName" placeholder="Enter party name" required>
                                   </div>
                                   <div class="mb-3">
-                                    <label for="address" class="form-label">Address</label>
-                                    <input type="text" name="address" class="form-control" id="address" placeholder="Enter Address" required>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="date" class="form-label">Date</label>
-                                    <input type="date" name="date" class="form-control" id="date" required>
+                                    <label for="description" class="form-label">Date</label>
+                                    <input type="date" name="date" class="form-control" id="description" placeholder="Enter Opening Balance" required>
                                   </div>
                                 </div>
-
-                                <p id="descriptionText" class="text-primary d-inline me-3" style="cursor: pointer; font-weight: bold;">Credit's & Balance</p>
-                                <p id="addFieldsText" class="text-primary d-inline" style="cursor: pointer; font-weight: bold;">Add Additional Fields</p>
+                                <p id="descriptionText" class="text-primary d-inline me-3 text-" style="cursor: pointer; font-weight:bold">Credit's & Balance</p>
+                                <p id="addFieldsText" class="text-primary d-inline" style="cursor: pointer; font-weight:bold">Add Additional Fields</p>
                                 <hr>
 
+                                <!-- Description Input Field -->
                                 <div id="descriptionField" style="display: none;">
                                   <div class="mb-3">
-                                    <label for="openingBalance" class="form-label">Opening Balance</label>
-                                    <input type="number" name="opening_balance" class="form-control" id="openingBalance" placeholder="Enter Opening Balance">
+                                    <label for="description" class="form-label">Opening Balance</label>
+                                    <input type="Number" name="opening_balance" class="form-control" id="description" placeholder="Enter Opening Balance">
                                   </div>
+
+
+
                                   <div class="form-check form-switch" style="margin-left: 40px;">
                                     <input class="form-check-input" type="checkbox" id="switchToggle" role="switch">
                                     <label class="form-check-label" for="switchToggle">Credit's Limit's</label>
                                   </div>
+
+                                  <!-- Input Field to Show/Hide -->
                                   <div id="toggleInputField" style="display: none;">
                                     <div class="mb-3">
                                       <label for="toggleInput" class="form-label">Add Credit's Limit</label>
@@ -538,6 +548,7 @@
                                   </div>
                                 </div>
 
+                                <!-- Additional Fields -->
                                 <div id="additionalFields" style="display: none;">
                                   <div class="mb-3">
                                     <label for="fieldName1" class="form-label">Field 1</label>
@@ -548,43 +559,53 @@
                                     <input type="text" name="fieldtwo" class="form-control" id="fieldName2" placeholder="Enter field 2">
                                   </div>
                                 </div>
-                                <button class="btn btn-primary">Save</button>
+                                <button class=" btn btn-primary"> Save </button>
                               </div>
+
                             </div>
                           </div>
+
                         </div>
                       </form>
-
+                      <!--End-->
+                      <!-- Dropdown button -->
                       <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="visually-hidden">Toggle Dropdown</span>
                       </button>
+
+                      <!-- Dropdown menu -->
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Import Excel file</a></li>
+
                       </ul>
                     </div>
                   </div>
+                  <!-- <h4 class="card-title">Block buttons</h4> -->
+                  <!-- <button type="button" class="btn btn-primary align-self-end">
+                        <i class="ti-user"></i> Block buttons </button> -->
 
                   <div class="template-demo d-grid gap-2 mt-4">
                     <div class="row">
-                      <div class="col-md-6 col-12 text-center mb-3">
+                      <div class="col-xl-6 text-center">
                         <h4 class="">Party Name</h4>
                         @foreach($getparty as $party)
                         <h5 class="text text-secondary" style="margin-bottom:-10px;">
+                          <!-- Form to handle the party name click -->
                           <form action="{{ route('party.detail') }}" method="GET" class="d-inline">
                             <input type="hidden" name="party_id" value="{{ $party->id }}">
                             <button type="submit" class="btn btn-link text-decoration-none">
-                              <span style="font-weight: 700;">{{ $party->party_name }}</span>
+                              <span style="font-weight:700"> {{ $party->party_name }} </span>
                             </button>
                           </form>
                         </h5>
                         @endforeach
                       </div>
 
-                      <div class="col-md-6 col-12 text-end">
+                      <div class="col-xl-6 text-end">
                         <h4 class="mb-3">Amount</h4>
                         @foreach($getparty as $party)
                         <h5 class="text text-success" style="margin-top: 18px;">
-                          <span style="font-weight: 700;">{{ $party->opening_balance ?? 0 }}</span>
+                          <span style="font-weight: 700;"> {{ $party->opening_balance ?? 0 }} </span>
                         </h5>
                         @endforeach
                       </div>
@@ -644,7 +665,10 @@
                       <div class="card-body">
                         <h2 class="card-title text-end">
                           <a> <i class="fa fa-whatsapp" aria-hidden="true" style="margin-right: 10px; color:lightgreen; font-size:larger"></i> </a>
+                          <!-- <a href=""> <i class="fa fa-bell" aria-hidden="true" style="color: orange;"></i> </a> -->
 
+                          <!-- Button to trigger modal -->
+                          <!-- Button to Open Modal -->
                           <a href="#" data-bs-toggle="modal" data-bs-target="#reminderModal">
                             <i class="fa fa-bell" aria-hidden="true" style="color: orange;"></i>
                           </a>
@@ -705,98 +729,139 @@
                       <div class="card-body">
 
                         <div class="card">
-                          <div style="max-width: 800px; overflow-y: auto;">
-                            @if(isset($selectparty) && ($purchasedata->isNotEmpty()))
-                            <table class="table table-bordered table-striped data-table1" style="min-width: 100%">
-                              <thead>
-                                <tr>
-                                  <th> #</th>
-                                  <th>Type</th>
-                                  <th>Number</th>
-                                  <th>Date</th>
-                                  <th>Total</th>
-                                  <th>Balance</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                @foreach($purchasedata as $index => $purchase)
-                                <tr>
-                                  <td>
-                                    <span style="color: Green; font-size:large">&#x25CF;</span>
-                                  </td>
-                                  <td>{{ $purchase->status ?? 'N/A' }}</td>
-                                  <td>{{ $purchase->phone_number ?? 'N/A' }}</td>
-                                  <td>{{ $purchase->date ? $purchase->date->format('Y-m-d') : 'N/A' }}</td>
-                                  <td>
-                                    {{-- Calculate the sum of the total from SaleItem --}}
-                                    @php
-                                    $total = $purchase->items->sum('total');
-                                    @endphp
-                                    {{ $total }}
-                                  </td>
-                                  <td>{{ $purchase->party->opening_balance ?? 'N/A' }}</td>
-                                </tr>
-                                @endforeach
+                          <!-- @if(isset($selectparty) && ($purchasedata ->isNotEmpty()))
+                          <table class="table table-bordered table-striped data-table1" style="min-width: 100%">
+                            <thead>
+                              <tr>
+                                <th> #</th>
+                                <th>Type</th>
+                                <th>Number</th>
+                                <th>Date</th>
+                                <th>Total</th>
+                                <th>Balance</th>
+                              </tr>
+                            </thead>
+                            @foreach($purchasedata as $index => $purchase)
+                            <tbody>
+                              <tr>
+                                <td>{{$index +1 }}</td>
+                                <td>{{$purchase->status ?? 'N/A'}}</td>
+                                <td>{{$purchase->phone_number ?? 'N/A'}}</td>
+                                <td>{{$purchase->date ?? 'N/A'}}</td>
+                                <td>{{$purchase->total ?? 'N/A'}}</td>
+                                <td>{{$purchase->party->opening_balance ?? 'N/A'}}</td>
+                              </tr>
 
-                                @foreach($seconddata as $index => $data)
-                                <tr>
-                                  <td>
-                                    <span style="color: red; font-size:large">&#x25CF;</span>
-                                  </td>
-                                  <td>{{ $data->status ?? 'N/A' }}</td>
-                                  <td>{{ $data->phone_number ?? 'N/A' }}</td>
-                                  <td>{{ $data->date ? $data->date->format('Y-m-d') : 'N/A' }}</td>
-                                  <td>
-                                    {{-- Calculate the sum of the total from SaleItem --}}
-                                    @php
-                                    $total = $data->items->sum('total');
-                                    @endphp
-                                    {{ $total }}
-                                  </td>
-                                  <td>{{ $data->party->opening_balance ?? 'N/A' }}</td>
-                                </tr>
-                                @endforeach
-                              </tbody>
-                            </table>
+                            </tbody>
+                            @endforeach
+                          </table>
+                          @endif -->
+                          @if(isset($selectparty) && ($purchasedata->isNotEmpty()))
+                          <table class="table table-bordered table-striped data-table1" style="min-width: 100%">
+                            <thead>
+                              <tr>
+                                <th> #</th>
+                                <th>Type</th>
+                                <th>Number</th>
+                                <th>Date</th>
+                                <th>Total</th>
+                                <th>Balance</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              @foreach($purchasedata as $index => $purchase)
+                              <tr>
+                                <td>
+                                  <span style="color: Green; font-size:large">&#x25CF;</span>
+                                </td>
+                                <td>{{ $purchase->status ?? 'N/A' }}</td>
+                                <td>{{ $purchase->phone_number ?? 'N/A' }}</td>
+                                <td>{{ $purchase->date ? $purchase->date->format('Y-m-d') : 'N/A' }}</td>
+                                <td>
+                                  {{-- Calculate the sum of the total from SaleItem --}}
+                                  @php
+                                  $total = $purchase->items->sum('total');
+                                  @endphp
+                                  {{ $total }}
+                                </td>
+                                <td>{{ $purchase->party->opening_balance ?? 'N/A' }}</td>
+                              </tr>
+                              @endforeach
 
-                            @else
+                              @foreach($seconddata as $index => $data)
+                              <tr>
+                                <td>
+                                  <span style="color: red; font-size:large">&#x25CF;</span>
+                                </td>
+                                <td>{{ $data->status ?? 'N/A' }}</td>
+                                <td>{{ $data->phone_number ?? 'N/A' }}</td>
+                                <td>{{ $data->date ? $data->date->format('Y-m-d') : 'N/A' }}</td>
+                                <td>
+                                  {{-- Calculate the sum of the total from SaleItem --}}
+                                  @php
+                                  $total = $data->items->sum('total');
+                                  @endphp
+                                  {{ $total }}
+                                </td>
+                                <td>{{ $data->party->opening_balance ?? 'N/A' }}</td>
+                              </tr>
+                              @endforeach
+                            </tbody>
+                          </table>
 
-                            <table class="table table-bordered table-striped data-table1" style="min-width: 100%">
-                              <thead>
-                                <tr>
-                                  <th> #</th>
-                                  <th>Type</th>
-                                  <th>Number</th>
-                                  <th>Date</th>
-                                  <th>Total</th>
-                                  <th>Balance</th>
-                                </tr>
-                              </thead>
-                              <tbody>
+                          @else
 
-                                <tr>
-                                  <td>
-                                    <span style="color: Green; font-size:large">&#x25CF;</span>
-                                  </td>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td>
+                          <table class="table table-bordered table-striped data-table1" style="min-width: 100%">
+                            <thead>
+                              <tr>
+                                <th> #</th>
+                                <th>Type</th>
+                                <th>Number</th>
+                                <th>Date</th>
+                                <th>Total</th>
+                                <th>Balance</th>
+                              </tr>
+                            </thead>
+                            <tbody>
 
-                                  </td>
-                                  <td></td>
-                                </tr>
+                              <tr>
+                                <td>
+                                  <span style="color: Green; font-size:large">&#x25CF;</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
 
-                              </tbody>
-                            </table>
-                            @endif
-                          </div>
+                                </td>
+                                <td></td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                          @endif
+
                         </div>
 
 
                       </div>
                     </div>
-
+                    <!-- <div class="col-md-5">
+                      <div class="card-body">
+                        <h4 class="card-title">Button Size</h4>
+                        <p class="card-description">Use class <code>.btn-{size}</code></p>
+                        <div class="template-demo">
+                          <button type="button" class="btn btn-outline-secondary btn-lg">btn-lg</button>
+                          <button type="button" class="btn btn-outline-secondary btn-md">btn-md</button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm">btn-sm</button>
+                        </div>
+                        <div class="template-demo mt-4">
+                          <button type="button" class="btn btn-danger btn-lg">btn-lg</button>
+                          <button type="button" class="btn btn-success btn-md">btn-md</button>
+                          <button type="button" class="btn btn-primary btn-sm">btn-sm</button>
+                        </div>
+                      </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
