@@ -705,92 +705,92 @@
                       <div class="card-body">
 
                         <div class="card">
+                          <div style="max-width: 800px; overflow-y: auto;">
+                            @if(isset($selectparty) && ($purchasedata->isNotEmpty()))
+                            <table class="table table-bordered table-striped data-table1" style="min-width: 100%">
+                              <thead>
+                                <tr>
+                                  <th> #</th>
+                                  <th>Type</th>
+                                  <th>Number</th>
+                                  <th>Date</th>
+                                  <th>Total</th>
+                                  <th>Balance</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                @foreach($purchasedata as $index => $purchase)
+                                <tr>
+                                  <td>
+                                    <span style="color: Green; font-size:large">&#x25CF;</span>
+                                  </td>
+                                  <td>{{ $purchase->status ?? 'N/A' }}</td>
+                                  <td>{{ $purchase->phone_number ?? 'N/A' }}</td>
+                                  <td>{{ $purchase->date ? $purchase->date->format('Y-m-d') : 'N/A' }}</td>
+                                  <td>
+                                    {{-- Calculate the sum of the total from SaleItem --}}
+                                    @php
+                                    $total = $purchase->items->sum('total');
+                                    @endphp
+                                    {{ $total }}
+                                  </td>
+                                  <td>{{ $purchase->party->opening_balance ?? 'N/A' }}</td>
+                                </tr>
+                                @endforeach
 
-                          @if(isset($selectparty) && ($purchasedata->isNotEmpty()))
-                          <table class="table table-bordered table-striped data-table1" style="min-width: 100%">
-                            <thead>
-                              <tr>
-                                <th> #</th>
-                                <th>Type</th>
-                                <th>Number</th>
-                                <th>Date</th>
-                                <th>Total</th>
-                                <th>Balance</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              @foreach($purchasedata as $index => $purchase)
-                              <tr>
-                                <td>
-                                  <span style="color: Green; font-size:large">&#x25CF;</span>
-                                </td>
-                                <td>{{ $purchase->status ?? 'N/A' }}</td>
-                                <td>{{ $purchase->phone_number ?? 'N/A' }}</td>
-                                <td>{{ $purchase->date ? $purchase->date->format('Y-m-d') : 'N/A' }}</td>
-                                <td>
-                                  {{-- Calculate the sum of the total from SaleItem --}}
-                                  @php
-                                  $total = $purchase->items->sum('total');
-                                  @endphp
-                                  {{ $total }}
-                                </td>
-                                <td>{{ $purchase->party->opening_balance ?? 'N/A' }}</td>
-                              </tr>
-                              @endforeach
+                                @foreach($seconddata as $index => $data)
+                                <tr>
+                                  <td>
+                                    <span style="color: red; font-size:large">&#x25CF;</span>
+                                  </td>
+                                  <td>{{ $data->status ?? 'N/A' }}</td>
+                                  <td>{{ $data->phone_number ?? 'N/A' }}</td>
+                                  <td>{{ $data->date ? $data->date->format('Y-m-d') : 'N/A' }}</td>
+                                  <td>
+                                    {{-- Calculate the sum of the total from SaleItem --}}
+                                    @php
+                                    $total = $data->items->sum('total');
+                                    @endphp
+                                    {{ $total }}
+                                  </td>
+                                  <td>{{ $data->party->opening_balance ?? 'N/A' }}</td>
+                                </tr>
+                                @endforeach
+                              </tbody>
+                            </table>
 
-                              @foreach($seconddata as $index => $data)
-                              <tr>
-                                <td>
-                                  <span style="color: red; font-size:large">&#x25CF;</span>
-                                </td>
-                                <td>{{ $data->status ?? 'N/A' }}</td>
-                                <td>{{ $data->phone_number ?? 'N/A' }}</td>
-                                <td>{{ $data->date ? $data->date->format('Y-m-d') : 'N/A' }}</td>
-                                <td>
-                                  {{-- Calculate the sum of the total from SaleItem --}}
-                                  @php
-                                  $total = $data->items->sum('total');
-                                  @endphp
-                                  {{ $total }}
-                                </td>
-                                <td>{{ $data->party->opening_balance ?? 'N/A' }}</td>
-                              </tr>
-                              @endforeach
-                            </tbody>
-                          </table>
+                            @else
 
-                          @else
+                            <table class="table table-bordered table-striped data-table1" style="min-width: 100%">
+                              <thead>
+                                <tr>
+                                  <th> #</th>
+                                  <th>Type</th>
+                                  <th>Number</th>
+                                  <th>Date</th>
+                                  <th>Total</th>
+                                  <th>Balance</th>
+                                </tr>
+                              </thead>
+                              <tbody>
 
-                          <table class="table table-bordered table-striped data-table1" style="min-width: 100%">
-                            <thead>
-                              <tr>
-                                <th> #</th>
-                                <th>Type</th>
-                                <th>Number</th>
-                                <th>Date</th>
-                                <th>Total</th>
-                                <th>Balance</th>
-                              </tr>
-                            </thead>
-                            <tbody>
+                                <tr>
+                                  <td>
+                                    <span style="color: Green; font-size:large">&#x25CF;</span>
+                                  </td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>
 
-                              <tr>
-                                <td>
-                                  <span style="color: Green; font-size:large">&#x25CF;</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
+                                  </td>
+                                  <td></td>
+                                </tr>
 
-                                </td>
-                                <td></td>
-                              </tr>
-
-                            </tbody>
-                          </table>
-                          @endif
-
+                              </tbody>
+                            </table>
+                            @endif
+                          </div>
                         </div>
 
 

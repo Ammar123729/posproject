@@ -601,38 +601,7 @@
 
                         <div class="card">
                           <div style="max-width: 800px; overflow-y: auto;">
-                            <!-- @if(isset($selectitem) && isset($selectsale))
-                            <table class="table table-bordered table-striped data-table1">
-                              <thead>
-                                <tr>
-                                  <th> #</th>
-                                  <th>Type</th>
-                                  <th>Invoice Number</th>
-                                  <th>Party_Name</th>
-                                  <th>Date</th>
-                                  <th>Quantity</th>
-                                  <th> Price/Unit </th>
-                                  <th> Payment_Method</th>
-                                  <th> Update</th>
-                                </tr>
-                              </thead>
-                              @foreach($getalldata as $index => $alldata)
-                              <tbody>
-                                <tr>
-                                  <td>{{$index +1 }}</td>
-                                  <td>{{$alldata->status}}</td>
-                                  <td>{{$alldata->invoice_number}}</td>
-                                  <td>{{$alldata->party_name}}</td>
-                                  <td>{{$alldata->date}}</td>
-                                  <td>{{$alldata->quantity}}</td>
-                                  <td>{{$alldata->price}}</td>
-                                  <td>{{$alldata->payment_method}}</td>
-                                </tr>
-                                @endforeach
-
-                              </tbody>
-                            </table>
-                            @endif -->
+                          
                             @if(isset($selectitem) && ($saleData->isNotEmpty() || $purchaseData->isNotEmpty()))
                             <table class="table table-bordered table-striped data-table1">
                               <thead>
