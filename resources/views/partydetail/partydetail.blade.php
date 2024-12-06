@@ -466,7 +466,7 @@
         <div class="row">
 
           <div style="display: flex; flex-wrap: wrap;">
-            <div class="col-md-4 grid-margin stretch-card" style="margin-right: 20px;">
+            <div class="col-md-12 col-sm-12 grid-margin stretch-card" style="margin-right: 20px;">
               <div class="card">
                 <div class="card-body">
                   <!-- <div class="text-end">
