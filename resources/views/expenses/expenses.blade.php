@@ -506,8 +506,16 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-4">
+                      <!-- <div class="col-md-4">
                         <h5 class="text-end mt-2"> Print <i class="fa fa-print" aria-hidden="true"></i></h5>
+                      </div> -->
+                      <div class="col-md-4">
+                        <h5 class="text-end mt-2">
+                          Print
+                          <i class="fa fa-print" aria-hidden="true" onclick="printTable()" style="cursor: pointer;"></i>
+                          | PDF
+                          <i class="fa fa-file-pdf" aria-hidden="true" onclick="generatePDF()" style="cursor: pointer;"></i>
+                        </h5>
                       </div>
                       <div class="col-md-1">
                         <h5 class="mt-2"> Excel <i class="bi bi-filetype-xls"></i></h5>
@@ -577,7 +585,7 @@
                 <p class="card-description"> Add class <code>.table-striped</code>
                 </p>
                 <div class="table-responsive">
-                  <table class="table table-striped">
+                  <table id="expensesTable" class="table table-striped">
                     <thead>
                       <tr>
                         <th> # </th>
@@ -609,4 +617,33 @@
   </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+
+<script>
+  // Function to print the table
+  function printTable() {
+    const printContents = document.getElementById('expensesTable').outerHTML;
+    const originalContents = document.body.innerHTML;
+
+    document.body.innerHTML = printContents;
+    window.print();
+    document.body.innerHTML = originalContents;
+    window.location.reload(); // Reload the page to restore the original content
+  }
+
+  // Function to generate PDF
+  function generatePDF() {
+    const table = document.getElementById('expensesTable');
+    const doc = new jsPDF();
+
+    doc.text('Expense Report', 14, 16);
+    doc.autoTable({
+      html: '#expensesTable',
+      startY: 20
+    });
+
+    doc.save('expenses.pdf'); // Save as a PDF file
+  }
+</script>
 @include('sidebar.footbar')
